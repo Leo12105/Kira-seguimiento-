@@ -23,7 +23,7 @@
             --success: #27ae60;
             --warning: #f39c12;
             --danger: #e74c3c;
-            --gradient1: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            --gradient1: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
             --gradient2: linear-gradient(135deg, #e94560 0%, #0f3460 100%);
             --shadow: 0 10px 30px rgba(0,0,0,0.1);
             --shadow-hover: 0 20px 40px rgba(0,0,0,0.15);
@@ -126,44 +126,70 @@
             transform: translateY(-1px);
         }
 
+        /* ===== HERO ESTILO DÁLMATA ===== */
         .hero {
-            background: var(--gradient2);
-            padding: 40px 20px;
+            background: #ffffff;
+            background-image:
+                radial-gradient(ellipse 60px 55px at 5% 20%, #1a1a1a 85%, transparent 100%),
+                radial-gradient(ellipse 45px 50px at 15% 70%, #1a1a1a 85%, transparent 100%),
+                radial-gradient(ellipse 70px 60px at 25% 30%, #1a1a1a 85%, transparent 100%),
+                radial-gradient(ellipse 40px 45px at 35% 80%, #1a1a1a 85%, transparent 100%),
+                radial-gradient(ellipse 55px 50px at 8% 90%, #1a1a1a 85%, transparent 100%),
+                radial-gradient(ellipse 50px 55px at 88% 15%, #1a1a1a 85%, transparent 100%),
+                radial-gradient(ellipse 65px 60px at 95% 60%, #1a1a1a 85%, transparent 100%),
+                radial-gradient(ellipse 45px 50px at 78% 85%, #1a1a1a 85%, transparent 100%),
+                radial-gradient(ellipse 55px 50px at 92% 35%, #1a1a1a 85%, transparent 100%),
+                radial-gradient(ellipse 40px 45px at 70% 5%, #1a1a1a 85%, transparent 100%),
+                radial-gradient(ellipse 35px 40px at 55% 50%, #1a1a1a 85%, transparent 100%),
+                radial-gradient(ellipse 50px 45px at 45% 10%, #1a1a1a 85%, transparent 100%);
+            padding: 50px 20px;
             text-align: center;
-            color: white;
+            color: #1a1a1a;
             position: relative;
             overflow: hidden;
+            border-bottom: 4px solid #1a1a1a;
         }
 
         .hero::before {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: rotate 20s linear infinite;
+            inset: 0;
+            background: rgba(255,255,255,0.55);
+            z-index: 0;
         }
 
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        .hero h1, .hero p {
+            position: relative;
+            z-index: 2;
         }
 
         .hero h1 {
+            color: #1a1a1a;
+            text-shadow:
+                2px 2px 0 #ffffff,
+                -1px -1px 0 #ffffff,
+                1px -1px 0 #ffffff,
+                -1px 1px 0 #ffffff,
+                2px 0 0 #ffffff,
+                -2px 0 0 #ffffff,
+                0 2px 0 #ffffff,
+                0 -2px 0 #ffffff;
             font-size: 2.5rem;
             margin-bottom: 10px;
-            position: relative;
-            z-index: 1;
+            font-weight: 800;
         }
 
         .hero p {
+            color: #1a1a1a;
+            text-shadow:
+                1px 1px 0 #ffffff,
+                -1px -1px 0 #ffffff,
+                1px -1px 0 #ffffff,
+                -1px 1px 0 #ffffff;
             font-size: 1.1rem;
-            opacity: 0.9;
-            position: relative;
-            z-index: 1;
+            font-weight: 700;
         }
+        /* ===== FIN HERO ===== */
 
         .nav-tabs {
             background: rgba(255,255,255,0.95);
@@ -359,7 +385,7 @@
         }
 
         .btn-primary {
-            background: var(--gradient2);
+            background: linear-gradient(135deg, #e94560 0%, #0f3460 100%);
             color: white;
         }
 
@@ -435,7 +461,7 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            background: var(--gradient2);
+            background: linear-gradient(135deg, #e94560 0%, #0f3460 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -606,7 +632,7 @@
         .chart-bar {
             width: 100%;
             max-width: 50px;
-            background: var(--gradient2);
+            background: linear-gradient(135deg, #e94560 0%, #0f3460 100%);
             border-radius: 8px 8px 0 0;
             transition: height 1s ease;
             position: relative;
@@ -973,16 +999,6 @@
             transition: all 0.3s;
         }
 
-        .sync-tab-btn.active {
-            background: var(--gradient2);
-            color: white;
-        }
-
-        .sync-tab-btn.inactive {
-            background: #f5f5f5;
-            color: #888;
-        }
-
         .footer {
             background: var(--gradient1);
             color: rgba(255,255,255,0.7);
@@ -1028,7 +1044,7 @@
     </header>
 
     <section class="hero">
-        <h1>🐕‍🦺 Seguimiento de Kira</h1>
+        <h1>🐕‍🦺 Seguimiento de mi Dálmata</h1>
         <p>Todo lo que necesitas para cuidar a tu mejor amiga</p>
     </section>
 
@@ -1432,8 +1448,8 @@
     <div class="modal-overlay" id="syncModal"><div class="modal" style="max-width:480px;">
         <div class="modal-title">🔑 Sincronizar Datos<button class="modal-close" onclick="closeModal('syncModal')">✕</button></div>
         <div style="display:flex;gap:0;margin-bottom:20px;border-radius:12px;overflow:hidden;border:2px solid #eee;">
-            <button id="tabGenerar" class="sync-tab-btn active" onclick="switchSyncTab('generar')" style="background:var(--accent);color:white;">📤 Generar Clave</button>
-            <button id="tabRestaurar" class="sync-tab-btn inactive" onclick="switchSyncTab('restaurar')" style="background:#f5f5f5;color:#888;">📥 Restaurar</button>
+            <button id="tabGenerar" class="sync-tab-btn" onclick="switchSyncTab('generar')" style="background:var(--accent);color:white;">📤 Generar Clave</button>
+            <button id="tabRestaurar" class="sync-tab-btn" onclick="switchSyncTab('restaurar')" style="background:#f5f5f5;color:#888;">📥 Restaurar</button>
         </div>
         <div id="panelGenerar">
             <div style="background:rgba(248,249,255,0.9);border-radius:14px;padding:18px;margin-bottom:15px;">
@@ -1491,14 +1507,12 @@
     </footer>
 
     <script>
-    // ==================== DATA ====================
     function getData(key){ const d=localStorage.getItem(key); return d?JSON.parse(d):[]; }
     function setData(key,data){ localStorage.setItem(key,JSON.stringify(data)); }
     function getObject(key){ const d=localStorage.getItem(key); return d?JSON.parse(d):{}; }
     function setObject(key,data){ localStorage.setItem(key,JSON.stringify(data)); }
     function generateId(){ return Date.now().toString(36)+Math.random().toString(36).substr(2); }
 
-    // ==================== NAV ====================
     function showSection(id,btn){
         document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
         document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
@@ -1506,14 +1520,12 @@
         if(btn) btn.classList.add('active');
     }
 
-    // ==================== MODALS ====================
     function openModal(id){ document.getElementById(id).classList.add('active'); }
     function closeModal(id){ document.getElementById(id).classList.remove('active'); }
     document.querySelectorAll('.modal-overlay').forEach(o=>{
         o.addEventListener('click',e=>{ if(e.target===o) o.classList.remove('active'); });
     });
 
-    // ==================== NOTIF ====================
     function showNotification(msg,type='success'){
         const n=document.getElementById('notification');
         document.getElementById('notifIcon').textContent=type==='success'?'✅':'❌';
@@ -1522,7 +1534,6 @@
         setTimeout(()=>n.classList.remove('show'),3000);
     }
 
-    // ==================== DATE ====================
     function updateDate(){
         document.getElementById('currentDate').textContent=
             new Date().toLocaleDateString('es-ES',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
@@ -1540,7 +1551,6 @@
         return m+' mes'+(m>1?'es':'');
     }
 
-    // ==================== PROFILE ====================
     function saveProfile(e){
         e.preventDefault();
         setObject('profile',{
@@ -1576,7 +1586,6 @@
         if(f){const r=new FileReader();r.onload=ev=>{localStorage.setItem('avatarImg',ev.target.result);loadProfile();showNotification('Foto actualizada');};r.readAsDataURL(f);}
     }
 
-    // ==================== GROWTH ====================
     function addGrowthRecord(e){
         e.preventDefault();
         const records=getData('growthRecords');
@@ -1649,39 +1658,30 @@
         c.innerHTML=`<div style="display:flex;gap:15px;flex-wrap:wrap;margin-bottom:12px;"><div style="flex:1;min-width:80px;background:rgba(248,249,255,0.9);border-radius:10px;padding:12px;text-align:center;"><div style="font-size:1.5rem;">📏</div><div style="font-size:1.2rem;font-weight:800;">${last.height?last.height+' cm':'--'}</div><div style="font-size:0.75rem;color:#888;">Altura</div></div><div style="flex:1;min-width:80px;background:rgba(248,249,255,0.9);border-radius:10px;padding:12px;text-align:center;"><div style="font-size:1.5rem;">⚖️</div><div style="font-size:1.2rem;font-weight:800;">${last.weight} kg</div><div style="font-size:0.75rem;color:#888;">Peso</div></div><div style="flex:1;min-width:80px;background:rgba(248,249,255,0.9);border-radius:10px;padding:12px;text-align:center;"><div style="font-size:1.5rem;">🗓️</div><div style="font-size:1rem;font-weight:800;color:#9b59b6;">Sem. ${last.weekNum}</div><div style="font-size:0.75rem;color:#888;">${formatDate(last.date)}</div></div></div>${wd!==null?`<div style="display:flex;gap:8px;flex-wrap:wrap;">${hd!==null?`<span style="background:#d4edda;color:#155724;padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:700;">📏 ${hd>0?'+':''}${hd} cm</span>`:''}<span style="background:${wd>=0?'#d4edda':'#f8d7da'};color:${wd>=0?'#155724':'#721c24'};padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:700;">⚖️ ${wd>0?'+':''}${wd} kg</span></div>`:''}`;
     }
 
-    // ==================== VACCINES ====================
     function addVaccine(e){e.preventDefault();const v=getData('vaccines');v.push({id:generateId(),type:document.getElementById('vaccineType').value,name:document.getElementById('vaccineName').value,date:document.getElementById('vaccineDate').value,next:document.getElementById('vaccineNext').value,vet:document.getElementById('vaccineVet').value,notes:document.getElementById('vaccineNotes').value});setData('vaccines',v);closeModal('vaccineModal');e.target.reset();loadVaccines();updateDashboard();showNotification('Vacuna registrada');}
     function loadVaccines(){const v=getData('vaccines'),t=document.getElementById('vaccineTable');if(!v.length){t.innerHTML='<tr><td colspan="7"><div class="empty-state"><div class="empty-icon">💉</div><p>Sin vacunas</p></div></td></tr>';return;}t.innerHTML=v.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(v=>{const n=v.next?new Date(v.next):null;let s='<span class="badge badge-success">✅ Al día</span>';if(n){const d=(n-new Date())/(864e5);if(d<0)s='<span class="badge badge-danger">⚠️ Vencida</span>';else if(d<30)s='<span class="badge badge-warning">⏰ Próxima</span>';}return `<tr><td><span class="badge badge-info">${v.type}</span></td><td><strong>${v.name}</strong></td><td>${formatDate(v.date)}</td><td>${v.next?formatDate(v.next):'--'}</td><td>${v.vet||'--'}</td><td>${s}</td><td><button class="btn btn-danger" onclick="deleteItem('vaccines','${v.id}',loadVaccines)">🗑️</button></td></tr>`;}).join('');}
 
-    // ==================== MEDICAL ====================
     function addMedical(e){e.preventDefault();const m=getData('medical');m.push({id:generateId(),date:document.getElementById('medicalDate').value,reason:document.getElementById('medicalReason').value,diagnosis:document.getElementById('medicalDiagnosis').value,treatment:document.getElementById('medicalTreatment').value,vet:document.getElementById('medicalVet').value,cost:document.getElementById('medicalCost').value});setData('medical',m);closeModal('medicalModal');e.target.reset();loadMedical();updateDashboard();showNotification('Registro médico guardado');}
     function loadMedical(){const m=getData('medical'),c=document.getElementById('medicalTimeline');if(!m.length){c.innerHTML='<div class="empty-state"><div class="empty-icon">🏥</div><p>Sin registros</p></div>';return;}c.innerHTML=m.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(m=>`<div class="timeline-item"><div class="timeline-date">${formatDate(m.date)} ${m.cost?'| $'+parseFloat(m.cost).toFixed(2):''}</div><div class="timeline-title">${m.reason}</div><div class="timeline-desc">${m.diagnosis?'<strong>Diagnóstico:</strong> '+m.diagnosis+'<br>':''}${m.treatment?'<strong>Tratamiento:</strong> '+m.treatment+'<br>':''}${m.vet?'<em>Dr. '+m.vet+'</em>':''}</div><button class="btn btn-danger" style="margin-top:10px;" onclick="deleteItem('medical','${m.id}',loadMedical)">🗑️</button></div>`).join('');}
 
-    // ==================== WEIGHT ====================
     function addWeight(e){e.preventDefault();const w=getData('weights');w.push({id:generateId(),date:document.getElementById('weightDate').value,value:parseFloat(document.getElementById('weightValue').value),notes:document.getElementById('weightNotes').value});setData('weights',w);closeModal('weightModal');e.target.reset();loadWeights();updateDashboard();showNotification('Peso registrado');}
     function loadWeights(){const w=getData('weights').sort((a,b)=>new Date(a.date)-new Date(b.date)),t=document.getElementById('weightTable');if(!w.length){t.innerHTML='<tr><td colspan="4"><div class="empty-state"><div class="empty-icon">⚖️</div><p>Sin registros</p></div></td></tr>';['currentWeight','minWeight','maxWeight'].forEach(id=>document.getElementById(id).textContent='--');document.getElementById('weightBars').innerHTML='';return;}const vals=w.map(x=>x.value);document.getElementById('currentWeight').textContent=vals[vals.length-1];document.getElementById('minWeight').textContent=Math.min(...vals);document.getElementById('maxWeight').textContent=Math.max(...vals);const mx=Math.max(...vals,1);document.getElementById('weightBars').innerHTML=w.slice(-12).map(x=>{const h=(x.value/(mx*1.2))*100;return `<div class="chart-bar-wrapper"><div class="chart-bar green-bar" style="height:${h}%"><div class="chart-bar-value">${x.value}</div></div><div class="chart-bar-label">${formatDate(x.date).split(' ').slice(0,2).join(' ')}</div></div>`;}).join('');t.innerHTML=w.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(x=>`<tr><td>${formatDate(x.date)}</td><td><strong>${x.value} kg</strong></td><td>${x.notes||'--'}</td><td><button class="btn btn-danger" onclick="deleteItem('weights','${x.id}',loadWeights)">🗑️</button></td></tr>`).join('');}
 
-    // ==================== FOOD ====================
     function addFood(e){e.preventDefault();const f=getData('foods');f.push({id:generateId(),type:document.getElementById('foodType').value,name:document.getElementById('foodName').value,amount:document.getElementById('foodAmount').value,time:document.getElementById('foodTime').value,freq:document.getElementById('foodFreq').value});setData('foods',f);closeModal('foodModal');e.target.reset();loadFoods();showNotification('Alimento registrado');}
     function loadFoods(){const f=getData('foods'),c=document.getElementById('foodList');if(!f.length){c.innerHTML='<div class="empty-state"><div class="empty-icon">🍽️</div><p>Sin registros</p></div>';return;}c.innerHTML=f.map(x=>`<div class="food-item"><div class="food-info"><span class="food-emoji">${x.type.split(' ')[0]}</span><div><div class="food-name">${x.name}</div><div class="food-amount">${x.amount||''} | ${x.freq}</div></div></div><div style="display:flex;align-items:center;gap:10px;"><span class="food-time">${x.time||'--'}</span><button class="btn btn-danger" onclick="deleteItem('foods','${x.id}',loadFoods)">🗑️</button></div></div>`).join('');}
 
-    // ==================== HYGIENE ====================
     function addHygiene(e){e.preventDefault();const h=getData('hygiene');h.push({id:generateId(),type:document.getElementById('hygieneType').value,date:document.getElementById('hygieneDate').value,product:document.getElementById('hygieneProduct').value,notes:document.getElementById('hygieneNotes').value});setData('hygiene',h);closeModal('hygieneModal');e.target.reset();loadHygiene();showNotification('Higiene registrada');}
     function loadHygiene(){const h=getData('hygiene'),t=document.getElementById('hygieneTable');if(!h.length){t.innerHTML='<tr><td colspan="5"><div class="empty-state"><div class="empty-icon">🧼</div><p>Sin registros</p></div></td></tr>';return;}t.innerHTML=h.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(x=>`<tr><td>${x.type}</td><td>${formatDate(x.date)}</td><td>${x.product||'--'}</td><td>${x.notes||'--'}</td><td><button class="btn btn-danger" onclick="deleteItem('hygiene','${x.id}',loadHygiene)">🗑️</button></td></tr>`).join('');}
 
-    // ==================== EXERCISE ====================
     function addExercise(e){e.preventDefault();const ex=getData('exercises');ex.push({id:generateId(),type:document.getElementById('exerciseType').value,date:document.getElementById('exerciseDate').value,duration:document.getElementById('exerciseDuration').value,distance:document.getElementById('exerciseDistance').value,notes:document.getElementById('exerciseNotes').value});setData('exercises',ex);closeModal('exerciseModal');e.target.reset();loadExercises();showNotification('Ejercicio registrado');}
     function loadExercises(){const ex=getData('exercises'),g=document.getElementById('exerciseGrid');if(!ex.length){g.innerHTML='<div class="empty-state" style="grid-column:1/-1;"><div class="empty-icon">🏃</div><p>Sin ejercicios</p></div>';return;}g.innerHTML=ex.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(x=>`<div class="exercise-card"><div class="exercise-icon">${x.type.split(' ')[0]}</div><div class="exercise-name">${x.type.split(' ').slice(1).join(' ')}</div><div class="exercise-duration">${x.duration} min ${x.distance?'| '+x.distance+' km':''}</div><div style="font-size:0.8rem;color:#888;margin-top:5px;">${formatDate(x.date)}</div><button class="btn btn-danger btn-small" style="margin-top:10px;" onclick="deleteItem('exercises','${x.id}',loadExercises)">🗑️</button></div>`).join('');const now=new Date(),wa=new Date(now-7*864e5),we=ex.filter(x=>new Date(x.date)>=wa);const wk=we.filter(x=>x.type.includes('Paseo')).length,rn=we.filter(x=>x.type.includes('Carrera')).length,pl=we.filter(x=>x.type.includes('Juego')).length;document.getElementById('walkProgress').textContent=wk+'/14';document.getElementById('walkBar').style.width=Math.min(wk/14*100,100)+'%';document.getElementById('runProgress').textContent=rn+'/7';document.getElementById('runBar').style.width=Math.min(rn/7*100,100)+'%';document.getElementById('playProgress').textContent=pl+'/7';document.getElementById('playBar').style.width=Math.min(pl/7*100,100)+'%';}
 
-    // ==================== REMINDERS ====================
     function addReminder(e){e.preventDefault();const r=getData('reminders');r.push({id:generateId(),category:document.getElementById('reminderCategory').value,desc:document.getElementById('reminderDesc').value,date:document.getElementById('reminderDate').value,priority:document.getElementById('reminderPriority').value,completed:false});setData('reminders',r);closeModal('reminderModal');e.target.reset();loadReminders();updateDashboard();showNotification('Recordatorio agregado');}
     function toggleReminder(id){const r=getData('reminders'),i=r.findIndex(x=>x.id===id);if(i!==-1){r[i].completed=!r[i].completed;setData('reminders',r);loadReminders();updateDashboard();}}
     function loadReminders(){const r=getData('reminders'),c=document.getElementById('reminderList');if(!r.length){c.innerHTML='<div class="empty-state"><div class="empty-icon">🔔</div><p>Sin recordatorios</p></div>';return;}c.innerHTML=r.sort((a,b)=>{if(a.completed!==b.completed)return a.completed?1:-1;return new Date(a.date)-new Date(b.date);}).map(x=>{const d=Math.ceil((new Date(x.date)-new Date())/864e5);let u='';if(!x.completed){if(d<0)u=' (⚠️ Vencido)';else if(d===0)u=' (🔴 HOY)';else if(d<=3)u=' (⏰ Pronto)';}return `<div class="reminder-item ${x.completed?'completed':''}"><span class="reminder-icon">${x.category.split(' ')[0]}</span><div class="reminder-content"><div class="reminder-title">${x.desc}${u}</div><div class="reminder-date">${x.category} | ${formatDate(x.date)} | ${x.priority}</div></div><input type="checkbox" class="reminder-check" ${x.completed?'checked':''} onchange="toggleReminder('${x.id}')"><button class="btn btn-danger" onclick="deleteItem('reminders','${x.id}',loadReminders)">🗑️</button></div>`;}).join('');}
 
-    // ==================== DELETE ====================
     function deleteItem(key,id,cb){if(confirm('¿Eliminar?')){let d=getData(key);d=d.filter(x=>x.id!==id);setData(key,d);cb();updateDashboard();showNotification('Eliminado');}}
 
-    // ==================== DASHBOARD ====================
     function updateDashboard(){
         const v=getData('vaccines'),m=getData('medical'),w=getData('weights'),r=getData('reminders').filter(x=>!x.completed),g=getData('growthRecords').sort((a,b)=>a.weekNum-b.weekNum);
         document.getElementById('statVaccines').textContent=v.length;
@@ -1695,7 +1695,6 @@
         updateDashGrowth(last,prev);
     }
 
-    // ==================== SYNC SYSTEM ====================
     const DATA_KEYS=['profile','growthRecords','vaccines','medical','weights','foods','hygiene','exercises','reminders','activities','avatarImg'];
 
     function switchSyncTab(tab){
@@ -1753,7 +1752,6 @@
 
     function loadAll(){loadProfile();loadGrowth();loadVaccines();loadMedical();loadWeights();loadFoods();loadHygiene();loadExercises();loadReminders();updateDashboard();}
 
-    // ==================== INIT ====================
     function init(){
         updateDate();loadAll();
         const today=new Date().toISOString().split('T')[0];
