@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🐾 Kira - Seguimiento Completo</title>
+    <title>🐾 Mi Dálmata - Seguimiento Completo</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
 
@@ -31,14 +31,42 @@
 
         body {
             font-family: 'Nunito', sans-serif;
-            background: #f0f2f5;
             color: #333;
             min-height: 100vh;
+            background-color: #ffffff;
+            background-image:
+                radial-gradient(ellipse 45px 40px at 8% 12%, rgba(30,30,30,0.13) 85%, transparent 100%),
+                radial-gradient(ellipse 30px 35px at 25% 8%, rgba(30,30,30,0.10) 85%, transparent 100%),
+                radial-gradient(ellipse 55px 50px at 50% 5%, rgba(30,30,30,0.08) 85%, transparent 100%),
+                radial-gradient(ellipse 25px 28px at 75% 10%, rgba(30,30,30,0.12) 85%, transparent 100%),
+                radial-gradient(ellipse 40px 38px at 92% 7%, rgba(30,30,30,0.09) 85%, transparent 100%),
+                radial-gradient(ellipse 35px 40px at 15% 28%, rgba(30,30,30,0.07) 85%, transparent 100%),
+                radial-gradient(ellipse 50px 45px at 40% 22%, rgba(30,30,30,0.11) 85%, transparent 100%),
+                radial-gradient(ellipse 28px 32px at 65% 18%, rgba(30,30,30,0.09) 85%, transparent 100%),
+                radial-gradient(ellipse 45px 42px at 85% 25%, rgba(30,30,30,0.13) 85%, transparent 100%),
+                radial-gradient(ellipse 38px 35px at 5% 45%, rgba(30,30,30,0.10) 85%, transparent 100%),
+                radial-gradient(ellipse 52px 48px at 30% 40%, rgba(30,30,30,0.07) 85%, transparent 100%),
+                radial-gradient(ellipse 32px 36px at 55% 35%, rgba(30,30,30,0.12) 85%, transparent 100%),
+                radial-gradient(ellipse 42px 39px at 78% 42%, rgba(30,30,30,0.08) 85%, transparent 100%),
+                radial-gradient(ellipse 48px 44px at 95% 38%, rgba(30,30,30,0.10) 85%, transparent 100%),
+                radial-gradient(ellipse 36px 40px at 12% 60%, rgba(30,30,30,0.11) 85%, transparent 100%),
+                radial-gradient(ellipse 44px 41px at 35% 55%, rgba(30,30,30,0.09) 85%, transparent 100%),
+                radial-gradient(ellipse 30px 34px at 60% 52%, rgba(30,30,30,0.13) 85%, transparent 100%),
+                radial-gradient(ellipse 50px 46px at 82% 58%, rgba(30,30,30,0.07) 85%, transparent 100%),
+                radial-gradient(ellipse 40px 37px at 8% 78%, rgba(30,30,30,0.12) 85%, transparent 100%),
+                radial-gradient(ellipse 46px 43px at 28% 72%, rgba(30,30,30,0.08) 85%, transparent 100%),
+                radial-gradient(ellipse 34px 38px at 52% 68%, rgba(30,30,30,0.10) 85%, transparent 100%),
+                radial-gradient(ellipse 55px 50px at 75% 75%, rgba(30,30,30,0.11) 85%, transparent 100%),
+                radial-gradient(ellipse 42px 40px at 93% 70%, rgba(30,30,30,0.09) 85%, transparent 100%),
+                radial-gradient(ellipse 38px 42px at 18% 92%, rgba(30,30,30,0.13) 85%, transparent 100%),
+                radial-gradient(ellipse 48px 44px at 45% 88%, rgba(30,30,30,0.07) 85%, transparent 100%),
+                radial-gradient(ellipse 32px 36px at 68% 85%, rgba(30,30,30,0.10) 85%, transparent 100%),
+                radial-gradient(ellipse 44px 40px at 88% 90%, rgba(30,30,30,0.12) 85%, transparent 100%);
+            background-attachment: fixed;
         }
 
         .header {
             background: var(--gradient1);
-            padding: 0;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -76,6 +104,26 @@
         .header-date {
             color: rgba(255,255,255,0.7);
             font-size: 0.9rem;
+        }
+
+        .btn-header {
+            background: rgba(255,255,255,0.15);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .btn-header:hover {
+            background: rgba(255,255,255,0.25);
+            border-color: rgba(255,255,255,0.6);
+            transform: translateY(-1px);
         }
 
         .hero {
@@ -118,12 +166,13 @@
         }
 
         .nav-tabs {
-            background: white;
+            background: rgba(255,255,255,0.95);
             padding: 0;
             box-shadow: var(--shadow);
             overflow-x: auto;
             white-space: nowrap;
             -webkit-overflow-scrolling: touch;
+            backdrop-filter: blur(10px);
         }
 
         .nav-tabs-inner {
@@ -181,12 +230,14 @@
         }
 
         .card {
-            background: white;
+            background: rgba(255,255,255,0.92);
             border-radius: 16px;
             padding: 25px;
             margin-bottom: 20px;
             box-shadow: var(--shadow);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.8);
         }
 
         .card:hover {
@@ -225,7 +276,7 @@
         }
 
         .stat-card {
-            background: white;
+            background: rgba(255,255,255,0.95);
             border-radius: 16px;
             padding: 20px;
             text-align: center;
@@ -233,14 +284,13 @@
             transition: transform 0.3s ease;
             position: relative;
             overflow: hidden;
+            backdrop-filter: blur(10px);
         }
 
         .stat-card::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; left: 0; right: 0;
             height: 4px;
         }
 
@@ -276,7 +326,7 @@
             font-family: 'Nunito', sans-serif;
             font-size: 0.95rem;
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
-            background: #fafafa;
+            background: rgba(250,250,250,0.9);
         }
 
         .form-group input:focus,
@@ -318,15 +368,8 @@
             box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4);
         }
 
-        .btn-success {
-            background: var(--success);
-            color: white;
-        }
-
-        .btn-success:hover {
-            background: #219a52;
-            transform: translateY(-2px);
-        }
+        .btn-success { background: var(--success); color: white; }
+        .btn-success:hover { background: #219a52; transform: translateY(-2px); }
 
         .btn-danger {
             background: var(--danger);
@@ -338,10 +381,7 @@
 
         .btn-danger:hover { background: #c0392b; }
 
-        .btn-small {
-            padding: 8px 16px;
-            font-size: 0.85rem;
-        }
+        .btn-small { padding: 8px 16px; font-size: 0.85rem; }
 
         .table-container {
             overflow-x: auto;
@@ -368,7 +408,7 @@
             font-size: 0.9rem;
         }
 
-        tbody tr:hover { background: #f8f9ff; }
+        tbody tr:hover { background: rgba(248,249,255,0.8); }
         tbody tr:last-child td { border-bottom: none; }
 
         .badge {
@@ -383,7 +423,6 @@
         .badge-warning { background: #fff3cd; color: #856404; }
         .badge-danger { background: #f8d7da; color: #721c24; }
         .badge-info { background: #d1ecf1; color: #0c5460; }
-        .badge-purple { background: #e8d5f5; color: #6c3483; }
 
         .profile-header {
             display: flex;
@@ -468,7 +507,7 @@
             position: relative;
             margin-bottom: 25px;
             padding: 15px 20px;
-            background: #f8f9ff;
+            background: rgba(248,249,255,0.9);
             border-radius: 12px;
             border-left: 4px solid var(--accent);
         }
@@ -524,7 +563,7 @@
             align-items: center;
             gap: 15px;
             padding: 15px;
-            background: #f8f9ff;
+            background: rgba(248,249,255,0.9);
             border-radius: 12px;
             margin-bottom: 10px;
             border-left: 4px solid var(--warning);
@@ -574,9 +613,7 @@
             min-height: 5px;
         }
 
-        .chart-bar.green-bar {
-            background: linear-gradient(180deg, #27ae60, #2ecc71);
-        }
+        .chart-bar.green-bar { background: linear-gradient(180deg, #27ae60, #2ecc71); }
 
         .chart-bar-value {
             position: absolute;
@@ -602,7 +639,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 12px 15px;
-            background: #f8f9ff;
+            background: rgba(248,249,255,0.9);
             border-radius: 10px;
             margin-bottom: 8px;
         }
@@ -614,7 +651,7 @@
         .food-time { font-size: 0.85rem; color: var(--accent); font-weight: 600; }
 
         .exercise-card {
-            background: white;
+            background: rgba(255,255,255,0.95);
             border-radius: 12px;
             padding: 20px;
             text-align: center;
@@ -630,10 +667,7 @@
         .modal-overlay {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background: rgba(0,0,0,0.5);
             z-index: 2000;
             justify-content: center;
@@ -710,7 +744,7 @@
         .notification.success { border-left: 4px solid var(--success); }
         .notification.error { border-left: 4px solid var(--danger); }
 
-        /* ========== GROWTH STYLES ========== */
+        /* GROWTH STYLES */
         .growth-hero {
             background: linear-gradient(135deg, #9b59b6 0%, #6c3483 100%);
             border-radius: 16px;
@@ -724,43 +758,23 @@
             gap: 15px;
         }
 
-        .growth-hero h2 {
-            font-size: 1.5rem;
-            font-weight: 800;
-        }
+        .growth-hero h2 { font-size: 1.5rem; font-weight: 800; }
+        .growth-hero p { font-size: 0.9rem; opacity: 0.85; margin-top: 5px; }
 
-        .growth-hero p {
-            font-size: 0.9rem;
-            opacity: 0.85;
-            margin-top: 5px;
-        }
-
-        .growth-stats {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+        .growth-stats { display: flex; gap: 20px; flex-wrap: wrap; }
 
         .growth-stat {
             text-align: center;
             background: rgba(255,255,255,0.15);
             padding: 12px 20px;
             border-radius: 12px;
-            backdrop-filter: blur(5px);
         }
 
-        .growth-stat-value {
-            font-size: 1.8rem;
-            font-weight: 800;
-        }
-
-        .growth-stat-label {
-            font-size: 0.75rem;
-            opacity: 0.85;
-        }
+        .growth-stat-value { font-size: 1.8rem; font-weight: 800; }
+        .growth-stat-label { font-size: 0.75rem; opacity: 0.85; }
 
         .growth-record-card {
-            background: white;
+            background: rgba(255,255,255,0.95);
             border-radius: 14px;
             padding: 18px 20px;
             margin-bottom: 12px;
@@ -769,18 +783,12 @@
             align-items: center;
             gap: 15px;
             border-left: 5px solid #9b59b6;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease;
             position: relative;
         }
 
-        .growth-record-card:hover {
-            transform: translateX(5px);
-            box-shadow: 0 6px 20px rgba(155,89,182,0.15);
-        }
-
-        .growth-record-card.first-record {
-            border-left-color: var(--warning);
-        }
+        .growth-record-card:hover { transform: translateX(5px); }
+        .growth-record-card.first-record { border-left-color: var(--warning); }
 
         .growth-week-badge {
             background: linear-gradient(135deg, #9b59b6, #6c3483);
@@ -792,31 +800,11 @@
             flex-shrink: 0;
         }
 
-        .growth-week-badge.first {
-            background: linear-gradient(135deg, #f39c12, #e67e22);
-        }
-
-        .growth-week-num {
-            font-size: 1.4rem;
-            font-weight: 800;
-            line-height: 1;
-        }
-
-        .growth-week-label {
-            font-size: 0.65rem;
-            opacity: 0.9;
-            font-weight: 600;
-        }
-
-        .growth-record-info {
-            flex: 1;
-        }
-
-        .growth-record-date {
-            font-size: 0.8rem;
-            color: #999;
-            font-weight: 600;
-        }
+        .growth-week-badge.first { background: linear-gradient(135deg, #f39c12, #e67e22); }
+        .growth-week-num { font-size: 1.4rem; font-weight: 800; line-height: 1; }
+        .growth-week-label { font-size: 0.65rem; opacity: 0.9; font-weight: 600; }
+        .growth-record-info { flex: 1; }
+        .growth-record-date { font-size: 0.8rem; color: #999; font-weight: 600; }
 
         .growth-record-values {
             display: flex;
@@ -825,32 +813,12 @@
             flex-wrap: wrap;
         }
 
-        .growth-value-item {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
+        .growth-value-item { display: flex; align-items: center; gap: 6px; }
+        .growth-value-icon { font-size: 1.1rem; }
+        .growth-value-text { font-weight: 800; color: var(--primary); font-size: 1rem; }
+        .growth-value-label { font-size: 0.75rem; color: #888; }
 
-        .growth-value-icon {
-            font-size: 1.1rem;
-        }
-
-        .growth-value-text {
-            font-weight: 800;
-            color: var(--primary);
-            font-size: 1rem;
-        }
-
-        .growth-value-label {
-            font-size: 0.75rem;
-            color: #888;
-        }
-
-        .growth-diff {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+        .growth-diff { display: flex; gap: 10px; flex-wrap: wrap; }
 
         .growth-diff-item {
             padding: 3px 10px;
@@ -859,26 +827,9 @@
             font-weight: 700;
         }
 
-        .growth-diff-item.up {
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .growth-diff-item.same {
-            background: #e2e3e5;
-            color: #495057;
-        }
-
-        .growth-diff-item.down {
-            background: #f8d7da;
-            color: #721c24;
-        }
-
-        .growth-record-actions {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-        }
+        .growth-diff-item.up { background: #d4edda; color: #155724; }
+        .growth-diff-item.same { background: #e2e3e5; color: #495057; }
+        .growth-diff-item.down { background: #f8d7da; color: #721c24; }
 
         .milestone-badge {
             position: absolute;
@@ -899,7 +850,7 @@
         }
 
         .mini-chart-container {
-            background: #f8f9ff;
+            background: rgba(248,249,255,0.9);
             border-radius: 12px;
             padding: 15px;
         }
@@ -943,13 +894,8 @@
             min-height: 4px;
         }
 
-        .mini-bar.purple-bar {
-            background: linear-gradient(180deg, #9b59b6, #d7bde2);
-        }
-
-        .mini-bar.pink-bar {
-            background: linear-gradient(180deg, #e94560, #ff6b8a);
-        }
+        .mini-bar.purple-bar { background: linear-gradient(180deg, #9b59b6, #d7bde2); }
+        .mini-bar.pink-bar { background: linear-gradient(180deg, #e94560, #ff6b8a); }
 
         .mini-bar-val {
             position: absolute;
@@ -977,7 +923,7 @@
         }
 
         .growth-summary-card {
-            background: white;
+            background: rgba(255,255,255,0.95);
             border-radius: 14px;
             padding: 18px;
             text-align: center;
@@ -999,7 +945,7 @@
         .growth-summary-label { font-size: 0.78rem; color: #888; font-weight: 600; margin-top: 4px; }
 
         .dalmatian-growth-info {
-            background: linear-gradient(135deg, #f8f9ff, #e8d5f5);
+            background: linear-gradient(135deg, rgba(248,249,255,0.9), rgba(232,213,245,0.9));
             border-radius: 14px;
             padding: 20px;
         }
@@ -1011,21 +957,30 @@
             align-items: flex-start;
         }
 
-        .growth-phase-icon {
-            font-size: 1.5rem;
-            flex-shrink: 0;
+        .growth-phase-icon { font-size: 1.5rem; flex-shrink: 0; }
+        .growth-phase-title { font-weight: 700; color: var(--primary); font-size: 0.9rem; }
+        .growth-phase-desc { font-size: 0.82rem; color: #666; margin-top: 3px; }
+
+        /* SYNC STYLES */
+        .sync-tab-btn {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s;
         }
 
-        .growth-phase-title {
-            font-weight: 700;
-            color: var(--primary);
-            font-size: 0.9rem;
+        .sync-tab-btn.active {
+            background: var(--gradient2);
+            color: white;
         }
 
-        .growth-phase-desc {
-            font-size: 0.82rem;
-            color: #666;
-            margin-top: 3px;
+        .sync-tab-btn.inactive {
+            background: #f5f5f5;
+            color: #888;
         }
 
         .footer {
@@ -1054,7 +1009,6 @@
             .card { padding: 18px; }
             .stat-card { padding: 15px; }
             .stat-value { font-size: 1.5rem; }
-            .growth-record-values { gap: 12px; }
         }
     </style>
 </head>
@@ -1066,7 +1020,10 @@
                 <span class="logo-icon">🐾</span>
                 <span>DalmataTracker</span>
             </div>
-            <div class="header-date" id="currentDate"></div>
+            <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                <div class="header-date" id="currentDate"></div>
+                <button class="btn-header" onclick="openModal('syncModal')">🔑 Sincronizar</button>
+            </div>
         </div>
     </header>
 
@@ -1077,34 +1034,34 @@
 
     <nav class="nav-tabs">
         <div class="nav-tabs-inner">
-            <button class="nav-tab active" onclick="showSection('dashboard', this)">
+            <button class="nav-tab active" onclick="showSection('dashboard',this)">
                 <span class="tab-icon">📊</span> Inicio
             </button>
-            <button class="nav-tab" onclick="showSection('profile', this)">
+            <button class="nav-tab" onclick="showSection('profile',this)">
                 <span class="tab-icon">🐶</span> Perfil
             </button>
-            <button class="nav-tab" onclick="showSection('growth', this)">
+            <button class="nav-tab" onclick="showSection('growth',this)">
                 <span class="tab-icon">📏</span> Crecimiento
             </button>
-            <button class="nav-tab" onclick="showSection('vaccines', this)">
+            <button class="nav-tab" onclick="showSection('vaccines',this)">
                 <span class="tab-icon">💉</span> Vacunas
             </button>
-            <button class="nav-tab" onclick="showSection('medical', this)">
-                <span class="tab-icon">🏥</span> Historial Médico
+            <button class="nav-tab" onclick="showSection('medical',this)">
+                <span class="tab-icon">🏥</span> Historial
             </button>
-            <button class="nav-tab" onclick="showSection('weight', this)">
+            <button class="nav-tab" onclick="showSection('weight',this)">
                 <span class="tab-icon">⚖️</span> Peso
             </button>
-            <button class="nav-tab" onclick="showSection('food', this)">
+            <button class="nav-tab" onclick="showSection('food',this)">
                 <span class="tab-icon">🍖</span> Alimentación
             </button>
-            <button class="nav-tab" onclick="showSection('hygiene', this)">
+            <button class="nav-tab" onclick="showSection('hygiene',this)">
                 <span class="tab-icon">🚿</span> Higiene
             </button>
-            <button class="nav-tab" onclick="showSection('exercise', this)">
+            <button class="nav-tab" onclick="showSection('exercise',this)">
                 <span class="tab-icon">🏃</span> Ejercicio
             </button>
-            <button class="nav-tab" onclick="showSection('reminders', this)">
+            <button class="nav-tab" onclick="showSection('reminders',this)">
                 <span class="tab-icon">📅</span> Recordatorios
             </button>
         </div>
@@ -1114,7 +1071,7 @@
 
         <!-- DASHBOARD -->
         <div class="section active" id="section-dashboard">
-            <div class="grid-4" id="dashboardStats">
+            <div class="grid-4">
                 <div class="stat-card pink">
                     <div class="stat-icon">💉</div>
                     <div class="stat-value" id="statVaccines">0</div>
@@ -1139,21 +1096,15 @@
 
             <div class="grid-2" style="margin-top:20px;">
                 <div class="card">
-                    <div class="card-title"><span class="icon">📏</span> Último Registro de Crecimiento</div>
+                    <div class="card-title"><span class="icon">📏</span> Último Crecimiento</div>
                     <div id="dashGrowth">
-                        <div class="empty-state">
-                            <div class="empty-icon">📏</div>
-                            <p>Ve a la sección Crecimiento para registrar</p>
-                        </div>
+                        <div class="empty-state"><div class="empty-icon">📏</div><p>Ve a Crecimiento para registrar</p></div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-title"><span class="icon">📅</span> Próximos Recordatorios</div>
                     <div id="dashReminders">
-                        <div class="empty-state">
-                            <div class="empty-icon">📋</div>
-                            <p>No hay recordatorios pendientes</p>
-                        </div>
+                        <div class="empty-state"><div class="empty-icon">📋</div><p>No hay recordatorios pendientes</p></div>
                     </div>
                 </div>
             </div>
@@ -1161,17 +1112,17 @@
             <div class="card" style="margin-top:20px;">
                 <div class="card-title"><span class="icon">💡</span> Datos sobre los Dálmatas</div>
                 <div class="grid-3">
-                    <div style="padding:15px; background:#f8f9ff; border-radius:12px;">
+                    <div style="padding:15px;background:rgba(248,249,255,0.9);border-radius:12px;">
                         <strong>🔬 Salud Urinaria</strong>
-                        <p style="font-size:0.85rem;color:#666;margin-top:8px;">Los dálmatas tienen predisposición a cálculos urinarios. ¡Mucha agua fresca siempre!</p>
+                        <p style="font-size:0.85rem;color:#666;margin-top:8px;">Predisposición a cálculos urinarios. ¡Mucha agua fresca!</p>
                     </div>
-                    <div style="padding:15px; background:#f8f9ff; border-radius:12px;">
+                    <div style="padding:15px;background:rgba(248,249,255,0.9);border-radius:12px;">
                         <strong>🏃 Ejercicio</strong>
-                        <p style="font-size:0.85rem;color:#666;margin-top:8px;">Necesitan al menos 1-2 horas de ejercicio diario. Son perros muy activos y atléticos.</p>
+                        <p style="font-size:0.85rem;color:#666;margin-top:8px;">Necesitan 1-2 horas de ejercicio diario. Muy activos y atléticos.</p>
                     </div>
-                    <div style="padding:15px; background:#f8f9ff; border-radius:12px;">
+                    <div style="padding:15px;background:rgba(248,249,255,0.9);border-radius:12px;">
                         <strong>👂 Audición</strong>
-                        <p style="font-size:0.85rem;color:#666;margin-top:8px;">Aproximadamente el 30% de los dálmatas tienen problemas auditivos. Revisa periódicamente.</p>
+                        <p style="font-size:0.85rem;color:#666;margin-top:8px;">30% tienen problemas auditivos. Revisa periódicamente.</p>
                     </div>
                 </div>
             </div>
@@ -1184,7 +1135,7 @@
                 <div class="profile-header">
                     <div class="profile-avatar" id="profileAvatar">
                         🐕‍🦺
-                        <label class="profile-avatar-upload" for="avatarInput" title="Cambiar foto">📷</label>
+                        <label class="profile-avatar-upload" for="avatarInput">📷</label>
                         <input type="file" id="avatarInput" accept="image/*" style="display:none" onchange="uploadAvatar(event)">
                     </div>
                     <div class="profile-info">
@@ -1199,189 +1150,70 @@
                     </div>
                 </div>
             </div>
-
             <div class="card">
                 <div class="card-title"><span class="icon">✏️</span> Editar Información</div>
                 <form onsubmit="saveProfile(event)">
                     <div class="form-row">
-                        <div class="form-group">
-                            <label>🏷️ Nombre</label>
-                            <input type="text" id="profileName" placeholder="Nombre de tu perrita">
-                        </div>
-                        <div class="form-group">
-                            <label>📅 Fecha de Nacimiento</label>
-                            <input type="date" id="profileBirth">
-                        </div>
+                        <div class="form-group"><label>🏷️ Nombre</label><input type="text" id="profileName" placeholder="Nombre de tu perrita"></div>
+                        <div class="form-group"><label>📅 Fecha de Nacimiento</label><input type="date" id="profileBirth"></div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group">
-                            <label>⚧ Género</label>
-                            <select id="profileGender">
-                                <option value="">Seleccionar...</option>
-                                <option value="Hembra">Hembra</option>
-                                <option value="Macho">Macho</option>
-                            </select>
+                        <div class="form-group"><label>⚧ Género</label>
+                            <select id="profileGender"><option value="">Seleccionar...</option><option value="Hembra">Hembra</option><option value="Macho">Macho</option></select>
                         </div>
-                        <div class="form-group">
-                            <label>🎨 Color</label>
-                            <input type="text" id="profileColor" placeholder="Ej: Blanco con manchas negras">
-                        </div>
+                        <div class="form-group"><label>🎨 Color</label><input type="text" id="profileColor" placeholder="Ej: Blanco con manchas negras"></div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group">
-                            <label>🏷️ Nº de Microchip</label>
-                            <input type="text" id="profileChip" placeholder="Número de microchip">
-                        </div>
-                        <div class="form-group">
-                            <label>🏥 Veterinario</label>
-                            <input type="text" id="profileVet" placeholder="Nombre del veterinario">
-                        </div>
+                        <div class="form-group"><label>🏷️ Nº de Microchip</label><input type="text" id="profileChip" placeholder="Número de microchip"></div>
+                        <div class="form-group"><label>🏥 Veterinario</label><input type="text" id="profileVet" placeholder="Nombre del veterinario"></div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group">
-                            <label>📞 Teléfono Veterinario</label>
-                            <input type="tel" id="profileVetPhone" placeholder="Teléfono">
-                        </div>
-                        <div class="form-group">
-                            <label>🩺 ¿Esterilizada?</label>
-                            <select id="profileSterilized">
-                                <option value="">Seleccionar...</option>
-                                <option value="Sí">Sí</option>
-                                <option value="No">No</option>
-                            </select>
+                        <div class="form-group"><label>📞 Teléfono Vet</label><input type="tel" id="profileVetPhone" placeholder="Teléfono"></div>
+                        <div class="form-group"><label>🩺 ¿Esterilizada?</label>
+                            <select id="profileSterilized"><option value="">Seleccionar...</option><option value="Sí">Sí</option><option value="No">No</option></select>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label>📝 Notas adicionales</label>
-                        <textarea id="profileNotes" rows="3" placeholder="Alergias, condiciones especiales, etc."></textarea>
-                    </div>
+                    <div class="form-group"><label>📝 Notas</label><textarea id="profileNotes" rows="3" placeholder="Alergias, condiciones..."></textarea></div>
                     <button type="submit" class="btn btn-primary">💾 Guardar Perfil</button>
                 </form>
             </div>
         </div>
 
-        <!-- ===== GROWTH SECTION ===== -->
+        <!-- GROWTH -->
         <div class="section" id="section-growth">
-
-            <!-- Hero banner -->
             <div class="growth-hero">
-                <div>
-                    <h2>📏 Registro de Crecimiento</h2>
-                    <p>Mide y pesa a tu dálmata cada semana para ver cómo crece 🐾</p>
-                </div>
+                <div><h2>📏 Registro de Crecimiento</h2><p>Mide y pesa a tu dálmata cada semana 🐾</p></div>
                 <div class="growth-stats">
-                    <div class="growth-stat">
-                        <div class="growth-stat-value" id="growthTotalWeeks">0</div>
-                        <div class="growth-stat-label">Semanas registradas</div>
-                    </div>
-                    <div class="growth-stat">
-                        <div class="growth-stat-value" id="growthTotalGrowthCm">--</div>
-                        <div class="growth-stat-label">Total crecido (cm)</div>
-                    </div>
-                    <div class="growth-stat">
-                        <div class="growth-stat-value" id="growthTotalGrowthKg">--</div>
-                        <div class="growth-stat-label">Total ganado (kg)</div>
-                    </div>
+                    <div class="growth-stat"><div class="growth-stat-value" id="growthTotalWeeks">0</div><div class="growth-stat-label">Semanas</div></div>
+                    <div class="growth-stat"><div class="growth-stat-value" id="growthTotalGrowthCm">--</div><div class="growth-stat-label">Total crecido</div></div>
+                    <div class="growth-stat"><div class="growth-stat-value" id="growthTotalGrowthKg">--</div><div class="growth-stat-label">Total ganado</div></div>
                 </div>
             </div>
-
-            <!-- Summary cards -->
             <div class="growth-summary-grid">
-                <div class="growth-summary-card">
-                    <div class="growth-summary-icon">📏</div>
-                    <div class="growth-summary-value" id="growthCurrentHeight">--</div>
-                    <div class="growth-summary-label">Altura actual (cm)</div>
-                </div>
-                <div class="growth-summary-card">
-                    <div class="growth-summary-icon">⚖️</div>
-                    <div class="growth-summary-value" id="growthCurrentWeight">--</div>
-                    <div class="growth-summary-label">Peso actual (kg)</div>
-                </div>
-                <div class="growth-summary-card">
-                    <div class="growth-summary-icon">📐</div>
-                    <div class="growth-summary-value" id="growthCurrentLength">--</div>
-                    <div class="growth-summary-label">Largo actual (cm)</div>
-                </div>
-                <div class="growth-summary-card">
-                    <div class="growth-summary-icon">🎯</div>
-                    <div class="growth-summary-value" id="growthLastWeekDiff">--</div>
-                    <div class="growth-summary-label">Creció esta semana (cm)</div>
-                </div>
-                <div class="growth-summary-card">
-                    <div class="growth-summary-icon">🏆</div>
-                    <div class="growth-summary-value" id="growthBestWeek">--</div>
-                    <div class="growth-summary-label">Mayor crecimiento semanal</div>
-                </div>
+                <div class="growth-summary-card"><div class="growth-summary-icon">📏</div><div class="growth-summary-value" id="growthCurrentHeight">--</div><div class="growth-summary-label">Altura actual (cm)</div></div>
+                <div class="growth-summary-card"><div class="growth-summary-icon">⚖️</div><div class="growth-summary-value" id="growthCurrentWeight">--</div><div class="growth-summary-label">Peso actual (kg)</div></div>
+                <div class="growth-summary-card"><div class="growth-summary-icon">📐</div><div class="growth-summary-value" id="growthCurrentLength">--</div><div class="growth-summary-label">Largo actual (cm)</div></div>
+                <div class="growth-summary-card"><div class="growth-summary-icon">🎯</div><div class="growth-summary-value" id="growthLastWeekDiff">--</div><div class="growth-summary-label">Creció esta semana</div></div>
+                <div class="growth-summary-card"><div class="growth-summary-icon">🏆</div><div class="growth-summary-value" id="growthBestWeek">--</div><div class="growth-summary-label">Mayor crecimiento</div></div>
             </div>
-
-            <!-- Dual charts -->
             <div class="card">
                 <div class="card-title"><span class="icon">📊</span> Gráficas de Evolución</div>
                 <div class="dual-chart">
-                    <div class="mini-chart-container">
-                        <div class="mini-chart-title">📏 Altura por semana (cm)</div>
-                        <div class="mini-chart">
-                            <div class="mini-bars" id="heightChartBars"></div>
-                        </div>
-                    </div>
-                    <div class="mini-chart-container">
-                        <div class="mini-chart-title">⚖️ Peso por semana (kg)</div>
-                        <div class="mini-chart">
-                            <div class="mini-bars" id="weightChartBars"></div>
-                        </div>
-                    </div>
+                    <div class="mini-chart-container"><div class="mini-chart-title">📏 Altura (cm)</div><div class="mini-chart"><div class="mini-bars" id="heightChartBars"></div></div></div>
+                    <div class="mini-chart-container"><div class="mini-chart-title">⚖️ Peso (kg)</div><div class="mini-chart"><div class="mini-bars" id="weightGrowthBars"></div></div></div>
                 </div>
             </div>
-
-            <!-- Records list -->
             <div class="card">
-                <div class="card-title">
-                    <span class="icon">📋</span> Historial Semanal
-                    <button class="btn btn-primary btn-small" onclick="openModal('growthModal')" style="margin-left:auto;">
-                        ➕ Registrar Semana
-                    </button>
-                </div>
-                <div id="growthList">
-                    <div class="empty-state">
-                        <div class="empty-icon">📏</div>
-                        <p>¡Registra el primer dato de tu dálmata!</p>
-                        <button class="btn btn-primary" onclick="openModal('growthModal')">➕ Agregar primer registro</button>
-                    </div>
-                </div>
+                <div class="card-title"><span class="icon">📋</span> Historial Semanal<button class="btn btn-primary btn-small" onclick="openModal('growthModal')" style="margin-left:auto;">➕ Registrar</button></div>
+                <div id="growthList"><div class="empty-state"><div class="empty-icon">📏</div><p>¡Registra el primer dato!</p><button class="btn btn-primary" onclick="openModal('growthModal')">➕ Primer registro</button></div></div>
             </div>
-
-            <!-- Dalmatian growth info -->
             <div class="card">
                 <div class="card-title"><span class="icon">🐾</span> Fases de Crecimiento del Dálmata</div>
                 <div class="dalmatian-growth-info">
-                    <div class="growth-phase">
-                        <div class="growth-phase-icon">🍼</div>
-                        <div>
-                            <div class="growth-phase-title">0 - 3 meses | Cachorro Neonato</div>
-                            <div class="growth-phase-desc">Crecimiento muy rápido. Puede duplicar o triplicar su peso. Peso aprox: 1 - 5 kg. Altura: 15 - 30 cm.</div>
-                        </div>
-                    </div>
-                    <div class="growth-phase">
-                        <div class="growth-phase-icon">🐶</div>
-                        <div>
-                            <div class="growth-phase-title">3 - 6 meses | Cachorro Joven</div>
-                            <div class="growth-phase-desc">Crecimiento acelerado en altura y peso. Peso aprox: 8 - 15 kg. Altura: 35 - 50 cm.</div>
-                        </div>
-                    </div>
-                    <div class="growth-phase">
-                        <div class="growth-phase-icon">🐕</div>
-                        <div>
-                            <div class="growth-phase-title">6 - 12 meses | Adolescente</div>
-                            <div class="growth-phase-desc">Crecimiento moderado. Comienza a tomar forma adulta. Peso aprox: 16 - 24 kg. Altura: 50 - 58 cm.</div>
-                        </div>
-                    </div>
-                    <div class="growth-phase">
-                        <div class="growth-phase-icon">🐕‍🦺</div>
-                        <div>
-                            <div class="growth-phase-title">12 - 18 meses | Adulto Joven</div>
-                            <div class="growth-phase-desc">Crecimiento casi completo. Hembras: 24 - 29 kg, 54 - 59 cm. Machos: 27 - 32 kg, 58 - 61 cm.</div>
-                        </div>
-                    </div>
+                    <div class="growth-phase"><div class="growth-phase-icon">🍼</div><div><div class="growth-phase-title">0-3 meses | Neonato</div><div class="growth-phase-desc">Crecimiento rápido. Peso: 1-5 kg. Altura: 15-30 cm.</div></div></div>
+                    <div class="growth-phase"><div class="growth-phase-icon">🐶</div><div><div class="growth-phase-title">3-6 meses | Cachorro</div><div class="growth-phase-desc">Crecimiento acelerado. Peso: 8-15 kg. Altura: 35-50 cm.</div></div></div>
+                    <div class="growth-phase"><div class="growth-phase-icon">🐕</div><div><div class="growth-phase-title">6-12 meses | Adolescente</div><div class="growth-phase-desc">Crecimiento moderado. Peso: 16-24 kg. Altura: 50-58 cm.</div></div></div>
+                    <div class="growth-phase"><div class="growth-phase-icon">🐕‍🦺</div><div><div class="growth-phase-title">12-18 meses | Adulto</div><div class="growth-phase-desc">Hembras: 24-29 kg, 54-59 cm. Machos: 27-32 kg, 58-61 cm.</div></div></div>
                 </div>
             </div>
         </div>
@@ -1389,47 +1221,16 @@
         <!-- VACCINES -->
         <div class="section" id="section-vaccines">
             <div class="card">
-                <div class="card-title">
-                    <span class="icon">💉</span> Registro de Vacunas y Desparasitaciones
-                    <button class="btn btn-primary btn-small" onclick="openModal('vaccineModal')" style="margin-left:auto;">➕ Agregar</button>
-                </div>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Tipo</th><th>Nombre</th><th>Fecha</th>
-                                <th>Próxima</th><th>Veterinario</th><th>Estado</th><th>Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody id="vaccineTable">
-                            <tr><td colspan="7"><div class="empty-state"><div class="empty-icon">💉</div><p>No hay vacunas registradas</p></div></td></tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="card-title"><span class="icon">💉</span> Vacunas<button class="btn btn-primary btn-small" onclick="openModal('vaccineModal')" style="margin-left:auto;">➕ Agregar</button></div>
+                <div class="table-container"><table><thead><tr><th>Tipo</th><th>Nombre</th><th>Fecha</th><th>Próxima</th><th>Vet</th><th>Estado</th><th></th></tr></thead><tbody id="vaccineTable"><tr><td colspan="7"><div class="empty-state"><div class="empty-icon">💉</div><p>No hay vacunas</p></div></td></tr></tbody></table></div>
             </div>
             <div class="card">
-                <div class="card-title"><span class="icon">📋</span> Calendario de Vacunación Recomendado</div>
+                <div class="card-title"><span class="icon">📋</span> Calendario Recomendado</div>
                 <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">6-8 semanas</div>
-                        <div class="timeline-title">Primera vacuna (Parvovirus, Moquillo)</div>
-                        <div class="timeline-desc">Vacuna polivalente inicial</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">10-12 semanas</div>
-                        <div class="timeline-title">Segunda dosis + Leptospirosis</div>
-                        <div class="timeline-desc">Refuerzo de la vacuna polivalente</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">14-16 semanas</div>
-                        <div class="timeline-title">Tercera dosis + Rabia</div>
-                        <div class="timeline-desc">Completar esquema primario</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Anual</div>
-                        <div class="timeline-title">Refuerzo anual</div>
-                        <div class="timeline-desc">Mantener inmunidad activa</div>
-                    </div>
+                    <div class="timeline-item"><div class="timeline-date">6-8 semanas</div><div class="timeline-title">Primera vacuna</div><div class="timeline-desc">Parvovirus, Moquillo</div></div>
+                    <div class="timeline-item"><div class="timeline-date">10-12 semanas</div><div class="timeline-title">Segunda dosis + Leptospirosis</div><div class="timeline-desc">Refuerzo polivalente</div></div>
+                    <div class="timeline-item"><div class="timeline-date">14-16 semanas</div><div class="timeline-title">Tercera dosis + Rabia</div><div class="timeline-desc">Esquema completo</div></div>
+                    <div class="timeline-item"><div class="timeline-date">Anual</div><div class="timeline-title">Refuerzo anual</div><div class="timeline-desc">Mantener inmunidad</div></div>
                 </div>
             </div>
         </div>
@@ -1437,143 +1238,61 @@
         <!-- MEDICAL -->
         <div class="section" id="section-medical">
             <div class="card">
-                <div class="card-title">
-                    <span class="icon">🏥</span> Historial Médico
-                    <button class="btn btn-primary btn-small" onclick="openModal('medicalModal')" style="margin-left:auto;">➕ Agregar</button>
-                </div>
-                <div id="medicalTimeline" class="timeline">
-                    <div class="empty-state"><div class="empty-icon">🏥</div><p>No hay registros médicos</p></div>
-                </div>
+                <div class="card-title"><span class="icon">🏥</span> Historial Médico<button class="btn btn-primary btn-small" onclick="openModal('medicalModal')" style="margin-left:auto;">➕ Agregar</button></div>
+                <div id="medicalTimeline" class="timeline"><div class="empty-state"><div class="empty-icon">🏥</div><p>Sin registros médicos</p></div></div>
             </div>
         </div>
 
         <!-- WEIGHT -->
         <div class="section" id="section-weight">
             <div class="card">
-                <div class="card-title">
-                    <span class="icon">⚖️</span> Control de Peso
-                    <button class="btn btn-primary btn-small" onclick="openModal('weightModal')" style="margin-left:auto;">➕ Registrar</button>
-                </div>
+                <div class="card-title"><span class="icon">⚖️</span> Control de Peso<button class="btn btn-primary btn-small" onclick="openModal('weightModal')" style="margin-left:auto;">➕ Registrar</button></div>
                 <div class="grid-3">
-                    <div class="stat-card green">
-                        <div class="stat-icon">⚖️</div>
-                        <div class="stat-value" id="currentWeight">--</div>
-                        <div class="stat-label">Peso Actual (kg)</div>
-                    </div>
-                    <div class="stat-card blue">
-                        <div class="stat-icon">📉</div>
-                        <div class="stat-value" id="minWeight">--</div>
-                        <div class="stat-label">Peso Mínimo (kg)</div>
-                    </div>
-                    <div class="stat-card pink">
-                        <div class="stat-icon">📈</div>
-                        <div class="stat-value" id="maxWeight">--</div>
-                        <div class="stat-label">Peso Máximo (kg)</div>
-                    </div>
+                    <div class="stat-card green"><div class="stat-icon">⚖️</div><div class="stat-value" id="currentWeight">--</div><div class="stat-label">Peso Actual (kg)</div></div>
+                    <div class="stat-card blue"><div class="stat-icon">📉</div><div class="stat-value" id="minWeight">--</div><div class="stat-label">Peso Mínimo</div></div>
+                    <div class="stat-card pink"><div class="stat-icon">📈</div><div class="stat-value" id="maxWeight">--</div><div class="stat-label">Peso Máximo</div></div>
                 </div>
-                <div style="margin-top:20px;padding:15px;background:#f8f9ff;border-radius:12px;">
-                    <strong>ℹ️ Peso ideal para Dálmatas:</strong>
-                    <span style="color:#666;"> Hembras: 24-29 kg | Machos: 27-32 kg</span>
+                <div style="margin-top:20px;padding:15px;background:rgba(248,249,255,0.9);border-radius:12px;">
+                    <strong>ℹ️ Peso ideal:</strong> <span style="color:#666;">Hembras: 24-29 kg | Machos: 27-32 kg</span>
                 </div>
-                <div class="chart-container">
-                    <div class="chart-bars" id="weightBars"></div>
-                </div>
-                <div class="table-container" style="margin-top:15px;">
-                    <table>
-                        <thead>
-                            <tr><th>Fecha</th><th>Peso (kg)</th><th>Notas</th><th>Acciones</th></tr>
-                        </thead>
-                        <tbody id="weightTable"></tbody>
-                    </table>
-                </div>
+                <div class="chart-container"><div class="chart-bars" id="weightBars"></div></div>
+                <div class="table-container" style="margin-top:15px;"><table><thead><tr><th>Fecha</th><th>Peso</th><th>Notas</th><th></th></tr></thead><tbody id="weightTable"></tbody></table></div>
             </div>
         </div>
 
         <!-- FOOD -->
         <div class="section" id="section-food">
             <div class="card">
-                <div class="card-title">
-                    <span class="icon">🍖</span> Plan de Alimentación
-                    <button class="btn btn-primary btn-small" onclick="openModal('foodModal')" style="margin-left:auto;">➕ Agregar</button>
-                </div>
-                <div id="foodList">
-                    <div class="empty-state"><div class="empty-icon">🍽️</div><p>No hay registros de alimentación</p></div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title"><span class="icon">💡</span> Consejos de Alimentación para Dálmatas</div>
-                <div class="grid-2">
-                    <div style="padding:15px;background:#fff3cd;border-radius:12px;">
-                        <strong>⚠️ Importante</strong>
-                        <p style="font-size:0.85rem;margin-top:8px;">Los dálmatas necesitan dieta baja en purinas para evitar cálculos urinarios.</p>
-                    </div>
-                    <div style="padding:15px;background:#d4edda;border-radius:12px;">
-                        <strong>✅ Recomendado</strong>
-                        <p style="font-size:0.85rem;margin-top:8px;">Alimento de alta calidad, mucha agua fresca, porciones adecuadas a su peso y actividad.</p>
-                    </div>
-                </div>
+                <div class="card-title"><span class="icon">🍖</span> Alimentación<button class="btn btn-primary btn-small" onclick="openModal('foodModal')" style="margin-left:auto;">➕ Agregar</button></div>
+                <div id="foodList"><div class="empty-state"><div class="empty-icon">🍽️</div><p>Sin registros</p></div></div>
             </div>
         </div>
 
         <!-- HYGIENE -->
         <div class="section" id="section-hygiene">
             <div class="card">
-                <div class="card-title">
-                    <span class="icon">🚿</span> Registro de Higiene
-                    <button class="btn btn-primary btn-small" onclick="openModal('hygieneModal')" style="margin-left:auto;">➕ Agregar</button>
-                </div>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr><th>Tipo</th><th>Fecha</th><th>Producto Usado</th><th>Notas</th><th>Acciones</th></tr>
-                        </thead>
-                        <tbody id="hygieneTable">
-                            <tr><td colspan="5"><div class="empty-state"><div class="empty-icon">🧼</div><p>No hay registros de higiene</p></div></td></tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="card-title"><span class="icon">🚿</span> Higiene<button class="btn btn-primary btn-small" onclick="openModal('hygieneModal')" style="margin-left:auto;">➕ Agregar</button></div>
+                <div class="table-container"><table><thead><tr><th>Tipo</th><th>Fecha</th><th>Producto</th><th>Notas</th><th></th></tr></thead><tbody id="hygieneTable"><tr><td colspan="5"><div class="empty-state"><div class="empty-icon">🧼</div><p>Sin registros</p></div></td></tr></tbody></table></div>
             </div>
         </div>
 
         <!-- EXERCISE -->
         <div class="section" id="section-exercise">
             <div class="card">
-                <div class="card-title">
-                    <span class="icon">🏃</span> Registro de Ejercicio
-                    <button class="btn btn-primary btn-small" onclick="openModal('exerciseModal')" style="margin-left:auto;">➕ Agregar</button>
-                </div>
-                <div class="grid-3" id="exerciseGrid">
-                    <div class="empty-state" style="grid-column:1/-1;">
-                        <div class="empty-icon">🏃</div><p>No hay ejercicios registrados</p>
-                    </div>
-                </div>
+                <div class="card-title"><span class="icon">🏃</span> Ejercicio<button class="btn btn-primary btn-small" onclick="openModal('exerciseModal')" style="margin-left:auto;">➕ Agregar</button></div>
+                <div class="grid-3" id="exerciseGrid"><div class="empty-state" style="grid-column:1/-1;"><div class="empty-icon">🏃</div><p>Sin ejercicios</p></div></div>
             </div>
             <div class="card">
                 <div class="card-title"><span class="icon">📊</span> Resumen Semanal</div>
                 <div class="grid-2">
                     <div>
-                        <div class="progress-container">
-                            <div class="progress-label"><span>🚶 Paseos</span><span id="walkProgress">0/14</span></div>
-                            <div class="progress-bar"><div class="progress-fill green" id="walkBar" style="width:0%"></div></div>
-                        </div>
-                        <div class="progress-container">
-                            <div class="progress-label"><span>🏃 Carreras</span><span id="runProgress">0/7</span></div>
-                            <div class="progress-bar"><div class="progress-fill blue" id="runBar" style="width:0%"></div></div>
-                        </div>
-                        <div class="progress-container">
-                            <div class="progress-label"><span>🎾 Juegos</span><span id="playProgress">0/7</span></div>
-                            <div class="progress-bar"><div class="progress-fill pink" id="playBar" style="width:0%"></div></div>
-                        </div>
+                        <div class="progress-container"><div class="progress-label"><span>🚶 Paseos</span><span id="walkProgress">0/14</span></div><div class="progress-bar"><div class="progress-fill green" id="walkBar" style="width:0%"></div></div></div>
+                        <div class="progress-container"><div class="progress-label"><span>🏃 Carreras</span><span id="runProgress">0/7</span></div><div class="progress-bar"><div class="progress-fill blue" id="runBar" style="width:0%"></div></div></div>
+                        <div class="progress-container"><div class="progress-label"><span>🎾 Juegos</span><span id="playProgress">0/7</span></div><div class="progress-bar"><div class="progress-fill pink" id="playBar" style="width:0%"></div></div></div>
                     </div>
-                    <div style="padding:15px;background:#f8f9ff;border-radius:12px;">
-                        <strong>🐕‍🦺 Ejercicio para Dálmatas</strong>
-                        <ul style="font-size:0.85rem;color:#666;margin-top:10px;padding-left:20px;">
-                            <li>Mínimo 1-2 horas diarias</li>
-                            <li>Excelentes compañeros para correr</li>
-                            <li>Les encanta nadar</li>
-                            <li>Juegos de buscar y traer</li>
-                            <li>Agility y deportes caninos</li>
-                        </ul>
+                    <div style="padding:15px;background:rgba(248,249,255,0.9);border-radius:12px;">
+                        <strong>🐕‍🦺 Ejercicio ideal</strong>
+                        <ul style="font-size:0.85rem;color:#666;margin-top:10px;padding-left:20px;"><li>1-2 horas diarias</li><li>Correr y nadar</li><li>Buscar y traer</li><li>Agility</li></ul>
                     </div>
                 </div>
             </div>
@@ -1582,1144 +1301,466 @@
         <!-- REMINDERS -->
         <div class="section" id="section-reminders">
             <div class="card">
-                <div class="card-title">
-                    <span class="icon">📅</span> Recordatorios
-                    <button class="btn btn-primary btn-small" onclick="openModal('reminderModal')" style="margin-left:auto;">➕ Agregar</button>
-                </div>
-                <div id="reminderList">
-                    <div class="empty-state"><div class="empty-icon">🔔</div><p>No hay recordatorios</p></div>
-                </div>
+                <div class="card-title"><span class="icon">📅</span> Recordatorios<button class="btn btn-primary btn-small" onclick="openModal('reminderModal')" style="margin-left:auto;">➕ Agregar</button></div>
+                <div id="reminderList"><div class="empty-state"><div class="empty-icon">🔔</div><p>Sin recordatorios</p></div></div>
             </div>
         </div>
 
     </main>
 
-    <!-- ===== MODALS ===== -->
+    <!-- ======= MODALS ======= -->
 
-    <!-- GROWTH MODAL -->
-    <div class="modal-overlay" id="growthModal">
-        <div class="modal">
-            <div class="modal-title">
-                📏 Registrar Medidas Semanales
-                <button class="modal-close" onclick="closeModal('growthModal')">✕</button>
+    <!-- GROWTH -->
+    <div class="modal-overlay" id="growthModal"><div class="modal">
+        <div class="modal-title">📏 Registrar Semana<button class="modal-close" onclick="closeModal('growthModal')">✕</button></div>
+        <form onsubmit="addGrowthRecord(event)">
+            <div class="form-row">
+                <div class="form-group"><label>📅 Fecha</label><input type="date" id="growthDate" required></div>
+                <div class="form-group"><label>🔢 Semana Nº</label><input type="number" id="growthWeekNum" min="1" required></div>
             </div>
-            <form onsubmit="addGrowthRecord(event)">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>📅 Fecha de medición</label>
-                        <input type="date" id="growthDate" required>
-                    </div>
-                    <div class="form-group">
-                        <label>🔢 Semana número</label>
-                        <input type="number" id="growthWeekNum" placeholder="Ej: 1, 2, 3..." min="1" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>📏 Altura (cm) <small style="color:#999;">— de suelo al lomo</small></label>
-                        <input type="number" id="growthHeight" step="0.1" placeholder="Ej: 45.5">
-                    </div>
-                    <div class="form-group">
-                        <label>⚖️ Peso (kg)</label>
-                        <input type="number" id="growthWeight" step="0.1" placeholder="Ej: 12.3" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>📐 Largo (cm) <small style="color:#999;">— cabeza a cola</small></label>
-                        <input type="number" id="growthLength" step="0.1" placeholder="Ej: 60.0">
-                    </div>
-                    <div class="form-group">
-                        <label>🌀 Contorno de pecho (cm)</label>
-                        <input type="number" id="growthChest" step="0.1" placeholder="Opcional">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>📝 Observaciones de esta semana</label>
-                    <textarea id="growthNotes" rows="2" placeholder="¿Cómo estuvo esta semana? ¿Algo especial?"></textarea>
-                </div>
-                <button type="submit" class="btn btn-success" style="width:100%;">💾 Guardar Registro</button>
-            </form>
-        </div>
-    </div>
+            <div class="form-row">
+                <div class="form-group"><label>📏 Altura (cm)</label><input type="number" id="growthHeight" step="0.1" placeholder="Del suelo al lomo"></div>
+                <div class="form-group"><label>⚖️ Peso (kg)</label><input type="number" id="growthWeight" step="0.1" required></div>
+            </div>
+            <div class="form-row">
+                <div class="form-group"><label>📐 Largo (cm)</label><input type="number" id="growthLength" step="0.1" placeholder="Cabeza a cola"></div>
+                <div class="form-group"><label>🌀 Pecho (cm)</label><input type="number" id="growthChest" step="0.1" placeholder="Contorno"></div>
+            </div>
+            <div class="form-group"><label>📝 Notas</label><textarea id="growthNotes" rows="2" placeholder="Observaciones..."></textarea></div>
+            <button type="submit" class="btn btn-success" style="width:100%;justify-content:center;">💾 Guardar</button>
+        </form>
+    </div></div>
 
-    <!-- VACCINE MODAL -->
-    <div class="modal-overlay" id="vaccineModal">
-        <div class="modal">
-            <div class="modal-title">
-                💉 Agregar Vacuna/Desparasitación
-                <button class="modal-close" onclick="closeModal('vaccineModal')">✕</button>
+    <!-- VACCINE -->
+    <div class="modal-overlay" id="vaccineModal"><div class="modal">
+        <div class="modal-title">💉 Agregar Vacuna<button class="modal-close" onclick="closeModal('vaccineModal')">✕</button></div>
+        <form onsubmit="addVaccine(event)">
+            <div class="form-group"><label>Tipo</label><select id="vaccineType" required><option value="">Seleccionar...</option><option value="Vacuna">🩺 Vacuna</option><option value="Desparasitación Interna">🔬 Desp. Interna</option><option value="Desparasitación Externa">🪲 Desp. Externa</option></select></div>
+            <div class="form-group"><label>Nombre</label><input type="text" id="vaccineName" required></div>
+            <div class="form-row">
+                <div class="form-group"><label>Fecha</label><input type="date" id="vaccineDate" required></div>
+                <div class="form-group"><label>Próxima</label><input type="date" id="vaccineNext"></div>
             </div>
-            <form onsubmit="addVaccine(event)">
-                <div class="form-group">
-                    <label>Tipo</label>
-                    <select id="vaccineType" required>
-                        <option value="">Seleccionar...</option>
-                        <option value="Vacuna">🩺 Vacuna</option>
-                        <option value="Desparasitación Interna">🔬 Desparasitación Interna</option>
-                        <option value="Desparasitación Externa">🪲 Desparasitación Externa</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Nombre</label>
-                    <input type="text" id="vaccineName" placeholder="Ej: Polivalente, Rabia..." required>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Fecha de Aplicación</label>
-                        <input type="date" id="vaccineDate" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Próxima Dosis</label>
-                        <input type="date" id="vaccineNext">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Veterinario</label>
-                    <input type="text" id="vaccineVet" placeholder="Nombre del veterinario">
-                </div>
-                <div class="form-group">
-                    <label>Notas</label>
-                    <textarea id="vaccineNotes" rows="2" placeholder="Observaciones..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-success">💾 Guardar</button>
-            </form>
-        </div>
-    </div>
+            <div class="form-group"><label>Veterinario</label><input type="text" id="vaccineVet"></div>
+            <div class="form-group"><label>Notas</label><textarea id="vaccineNotes" rows="2"></textarea></div>
+            <button type="submit" class="btn btn-success">💾 Guardar</button>
+        </form>
+    </div></div>
 
-    <!-- MEDICAL MODAL -->
-    <div class="modal-overlay" id="medicalModal">
-        <div class="modal">
-            <div class="modal-title">
-                🏥 Agregar Registro Médico
-                <button class="modal-close" onclick="closeModal('medicalModal')">✕</button>
-            </div>
-            <form onsubmit="addMedical(event)">
-                <div class="form-group">
-                    <label>Fecha</label>
-                    <input type="date" id="medicalDate" required>
-                </div>
-                <div class="form-group">
-                    <label>Motivo de consulta</label>
-                    <input type="text" id="medicalReason" placeholder="Ej: Revisión general..." required>
-                </div>
-                <div class="form-group">
-                    <label>Diagnóstico</label>
-                    <input type="text" id="medicalDiagnosis" placeholder="Diagnóstico del veterinario">
-                </div>
-                <div class="form-group">
-                    <label>Tratamiento</label>
-                    <textarea id="medicalTreatment" rows="2" placeholder="Medicamentos, indicaciones..."></textarea>
-                </div>
-                <div class="form-group">
-                    <label>Veterinario</label>
-                    <input type="text" id="medicalVet" placeholder="Nombre del veterinario">
-                </div>
-                <div class="form-group">
-                    <label>Costo</label>
-                    <input type="number" id="medicalCost" placeholder="0.00" step="0.01">
-                </div>
-                <button type="submit" class="btn btn-success">💾 Guardar</button>
-            </form>
-        </div>
-    </div>
+    <!-- MEDICAL -->
+    <div class="modal-overlay" id="medicalModal"><div class="modal">
+        <div class="modal-title">🏥 Registro Médico<button class="modal-close" onclick="closeModal('medicalModal')">✕</button></div>
+        <form onsubmit="addMedical(event)">
+            <div class="form-group"><label>Fecha</label><input type="date" id="medicalDate" required></div>
+            <div class="form-group"><label>Motivo</label><input type="text" id="medicalReason" required></div>
+            <div class="form-group"><label>Diagnóstico</label><input type="text" id="medicalDiagnosis"></div>
+            <div class="form-group"><label>Tratamiento</label><textarea id="medicalTreatment" rows="2"></textarea></div>
+            <div class="form-group"><label>Veterinario</label><input type="text" id="medicalVet"></div>
+            <div class="form-group"><label>Costo</label><input type="number" id="medicalCost" step="0.01"></div>
+            <button type="submit" class="btn btn-success">💾 Guardar</button>
+        </form>
+    </div></div>
 
-    <!-- WEIGHT MODAL -->
-    <div class="modal-overlay" id="weightModal">
-        <div class="modal">
-            <div class="modal-title">
-                ⚖️ Registrar Peso
-                <button class="modal-close" onclick="closeModal('weightModal')">✕</button>
+    <!-- WEIGHT -->
+    <div class="modal-overlay" id="weightModal"><div class="modal">
+        <div class="modal-title">⚖️ Registrar Peso<button class="modal-close" onclick="closeModal('weightModal')">✕</button></div>
+        <form onsubmit="addWeight(event)">
+            <div class="form-row">
+                <div class="form-group"><label>Fecha</label><input type="date" id="weightDate" required></div>
+                <div class="form-group"><label>Peso (kg)</label><input type="number" id="weightValue" step="0.1" required></div>
             </div>
-            <form onsubmit="addWeight(event)">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Fecha</label>
-                        <input type="date" id="weightDate" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Peso (kg)</label>
-                        <input type="number" id="weightValue" step="0.1" placeholder="Ej: 25.5" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Notas</label>
-                    <input type="text" id="weightNotes" placeholder="Observaciones...">
-                </div>
-                <button type="submit" class="btn btn-success">💾 Guardar</button>
-            </form>
-        </div>
-    </div>
+            <div class="form-group"><label>Notas</label><input type="text" id="weightNotes"></div>
+            <button type="submit" class="btn btn-success">💾 Guardar</button>
+        </form>
+    </div></div>
 
-    <!-- FOOD MODAL -->
-    <div class="modal-overlay" id="foodModal">
-        <div class="modal">
-            <div class="modal-title">
-                🍖 Agregar Alimentación
-                <button class="modal-close" onclick="closeModal('foodModal')">✕</button>
+    <!-- FOOD -->
+    <div class="modal-overlay" id="foodModal"><div class="modal">
+        <div class="modal-title">🍖 Alimentación<button class="modal-close" onclick="closeModal('foodModal')">✕</button></div>
+        <form onsubmit="addFood(event)">
+            <div class="form-group"><label>Tipo</label><select id="foodType" required><option value="">Seleccionar...</option><option value="🥩 Croquetas">🥩 Croquetas</option><option value="🍖 Húmedo">🍖 Húmedo</option><option value="🥕 Natural">🥕 Natural</option><option value="🦴 Snack">🦴 Snack</option><option value="💊 Suplemento">💊 Suplemento</option></select></div>
+            <div class="form-group"><label>Marca/Nombre</label><input type="text" id="foodName" required></div>
+            <div class="form-row">
+                <div class="form-group"><label>Cantidad</label><input type="text" id="foodAmount"></div>
+                <div class="form-group"><label>Horario</label><input type="time" id="foodTime"></div>
             </div>
-            <form onsubmit="addFood(event)">
-                <div class="form-group">
-                    <label>Tipo de alimento</label>
-                    <select id="foodType" required>
-                        <option value="">Seleccionar...</option>
-                        <option value="🥩 Croquetas">🥩 Croquetas</option>
-                        <option value="🍖 Alimento húmedo">🍖 Alimento húmedo</option>
-                        <option value="🥕 Natural/BARF">🥕 Natural/BARF</option>
-                        <option value="🦴 Snack/Premio">🦴 Snack/Premio</option>
-                        <option value="💊 Suplemento">💊 Suplemento</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Marca/Nombre</label>
-                    <input type="text" id="foodName" placeholder="Ej: Royal Canin Dalmatian" required>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Cantidad</label>
-                        <input type="text" id="foodAmount" placeholder="Ej: 200g">
-                    </div>
-                    <div class="form-group">
-                        <label>Horario</label>
-                        <input type="time" id="foodTime">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Frecuencia</label>
-                    <select id="foodFreq">
-                        <option value="Diario">Diario</option>
-                        <option value="2 veces al día">2 veces al día</option>
-                        <option value="3 veces al día">3 veces al día</option>
-                        <option value="Ocasional">Ocasional</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-success">💾 Guardar</button>
-            </form>
-        </div>
-    </div>
+            <div class="form-group"><label>Frecuencia</label><select id="foodFreq"><option value="Diario">Diario</option><option value="2 veces/día">2 veces/día</option><option value="3 veces/día">3 veces/día</option><option value="Ocasional">Ocasional</option></select></div>
+            <button type="submit" class="btn btn-success">💾 Guardar</button>
+        </form>
+    </div></div>
 
-    <!-- HYGIENE MODAL -->
-    <div class="modal-overlay" id="hygieneModal">
-        <div class="modal">
-            <div class="modal-title">
-                🚿 Agregar Registro de Higiene
-                <button class="modal-close" onclick="closeModal('hygieneModal')">✕</button>
-            </div>
-            <form onsubmit="addHygiene(event)">
-                <div class="form-group">
-                    <label>Tipo</label>
-                    <select id="hygieneType" required>
-                        <option value="">Seleccionar...</option>
-                        <option value="🚿 Baño">🚿 Baño</option>
-                        <option value="✂️ Corte de uñas">✂️ Corte de uñas</option>
-                        <option value="🦷 Limpieza dental">🦷 Limpieza dental</option>
-                        <option value="👂 Limpieza de oídos">👂 Limpieza de oídos</option>
-                        <option value="🧹 Cepillado">🧹 Cepillado</option>
-                        <option value="👁️ Limpieza de ojos">👁️ Limpieza de ojos</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Fecha</label>
-                    <input type="date" id="hygieneDate" required>
-                </div>
-                <div class="form-group">
-                    <label>Producto usado</label>
-                    <input type="text" id="hygieneProduct" placeholder="Ej: Shampoo hipoalergénico">
-                </div>
-                <div class="form-group">
-                    <label>Notas</label>
-                    <input type="text" id="hygieneNotes" placeholder="Observaciones...">
-                </div>
-                <button type="submit" class="btn btn-success">💾 Guardar</button>
-            </form>
-        </div>
-    </div>
+    <!-- HYGIENE -->
+    <div class="modal-overlay" id="hygieneModal"><div class="modal">
+        <div class="modal-title">🚿 Higiene<button class="modal-close" onclick="closeModal('hygieneModal')">✕</button></div>
+        <form onsubmit="addHygiene(event)">
+            <div class="form-group"><label>Tipo</label><select id="hygieneType" required><option value="">Seleccionar...</option><option value="🚿 Baño">🚿 Baño</option><option value="✂️ Uñas">✂️ Uñas</option><option value="🦷 Dental">🦷 Dental</option><option value="👂 Oídos">👂 Oídos</option><option value="🧹 Cepillado">🧹 Cepillado</option></select></div>
+            <div class="form-group"><label>Fecha</label><input type="date" id="hygieneDate" required></div>
+            <div class="form-group"><label>Producto</label><input type="text" id="hygieneProduct"></div>
+            <div class="form-group"><label>Notas</label><input type="text" id="hygieneNotes"></div>
+            <button type="submit" class="btn btn-success">💾 Guardar</button>
+        </form>
+    </div></div>
 
-    <!-- EXERCISE MODAL -->
-    <div class="modal-overlay" id="exerciseModal">
-        <div class="modal">
-            <div class="modal-title">
-                🏃 Agregar Ejercicio
-                <button class="modal-close" onclick="closeModal('exerciseModal')">✕</button>
+    <!-- EXERCISE -->
+    <div class="modal-overlay" id="exerciseModal"><div class="modal">
+        <div class="modal-title">🏃 Ejercicio<button class="modal-close" onclick="closeModal('exerciseModal')">✕</button></div>
+        <form onsubmit="addExercise(event)">
+            <div class="form-group"><label>Tipo</label><select id="exerciseType" required><option value="">Seleccionar...</option><option value="🚶 Paseo">🚶 Paseo</option><option value="🏃 Carrera">🏃 Carrera</option><option value="🎾 Juego">🎾 Juego</option><option value="🏊 Natación">🏊 Natación</option><option value="🏅 Agility">🏅 Agility</option></select></div>
+            <div class="form-row">
+                <div class="form-group"><label>Fecha</label><input type="date" id="exerciseDate" required></div>
+                <div class="form-group"><label>Duración (min)</label><input type="number" id="exerciseDuration" required></div>
             </div>
-            <form onsubmit="addExercise(event)">
-                <div class="form-group">
-                    <label>Tipo de ejercicio</label>
-                    <select id="exerciseType" required>
-                        <option value="">Seleccionar...</option>
-                        <option value="🚶 Paseo">🚶 Paseo</option>
-                        <option value="🏃 Carrera">🏃 Carrera</option>
-                        <option value="🎾 Juego">🎾 Juego</option>
-                        <option value="🏊 Natación">🏊 Natación</option>
-                        <option value="🏅 Agility">🏅 Agility</option>
-                        <option value="🧠 Entrenamiento">🧠 Entrenamiento</option>
-                    </select>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Fecha</label>
-                        <input type="date" id="exerciseDate" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Duración (minutos)</label>
-                        <input type="number" id="exerciseDuration" placeholder="30" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Distancia (km) - Opcional</label>
-                    <input type="number" id="exerciseDistance" step="0.1" placeholder="Ej: 3.5">
-                </div>
-                <div class="form-group">
-                    <label>Notas</label>
-                    <input type="text" id="exerciseNotes" placeholder="¿Cómo se comportó?">
-                </div>
-                <button type="submit" class="btn btn-success">💾 Guardar</button>
-            </form>
-        </div>
-    </div>
+            <div class="form-group"><label>Distancia (km)</label><input type="number" id="exerciseDistance" step="0.1"></div>
+            <div class="form-group"><label>Notas</label><input type="text" id="exerciseNotes"></div>
+            <button type="submit" class="btn btn-success">💾 Guardar</button>
+        </form>
+    </div></div>
 
-    <!-- REMINDER MODAL -->
-    <div class="modal-overlay" id="reminderModal">
-        <div class="modal">
-            <div class="modal-title">
-                📅 Agregar Recordatorio
-                <button class="modal-close" onclick="closeModal('reminderModal')">✕</button>
-            </div>
-            <form onsubmit="addReminder(event)">
-                <div class="form-group">
-                    <label>Categoría</label>
-                    <select id="reminderCategory" required>
-                        <option value="">Seleccionar...</option>
-                        <option value="💉 Vacuna">💉 Vacuna</option>
-                        <option value="🏥 Veterinario">🏥 Veterinario</option>
-                        <option value="🪲 Desparasitación">🪲 Desparasitación</option>
-                        <option value="🚿 Baño">🚿 Baño</option>
-                        <option value="✂️ Peluquería">✂️ Peluquería</option>
-                        <option value="📏 Medición semanal">📏 Medición semanal</option>
-                        <option value="🍖 Comprar alimento">🍖 Comprar alimento</option>
-                        <option value="📋 Otro">📋 Otro</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Descripción</label>
-                    <input type="text" id="reminderDesc" placeholder="Detalle del recordatorio" required>
-                </div>
-                <div class="form-group">
-                    <label>Fecha</label>
-                    <input type="date" id="reminderDate" required>
-                </div>
-                <div class="form-group">
-                    <label>Prioridad</label>
-                    <select id="reminderPriority">
-                        <option value="Normal">🟡 Normal</option>
-                        <option value="Alta">🔴 Alta</option>
-                        <option value="Baja">🟢 Baja</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-success">💾 Guardar</button>
-            </form>
+    <!-- REMINDER -->
+    <div class="modal-overlay" id="reminderModal"><div class="modal">
+        <div class="modal-title">📅 Recordatorio<button class="modal-close" onclick="closeModal('reminderModal')">✕</button></div>
+        <form onsubmit="addReminder(event)">
+            <div class="form-group"><label>Categoría</label><select id="reminderCategory" required><option value="">Seleccionar...</option><option value="💉 Vacuna">💉 Vacuna</option><option value="🏥 Veterinario">🏥 Veterinario</option><option value="🪲 Desparasitación">🪲 Desparasitación</option><option value="🚿 Baño">🚿 Baño</option><option value="📏 Medición">📏 Medición</option><option value="🍖 Alimento">🍖 Alimento</option><option value="📋 Otro">📋 Otro</option></select></div>
+            <div class="form-group"><label>Descripción</label><input type="text" id="reminderDesc" required></div>
+            <div class="form-group"><label>Fecha</label><input type="date" id="reminderDate" required></div>
+            <div class="form-group"><label>Prioridad</label><select id="reminderPriority"><option value="Normal">🟡 Normal</option><option value="Alta">🔴 Alta</option><option value="Baja">🟢 Baja</option></select></div>
+            <button type="submit" class="btn btn-success">💾 Guardar</button>
+        </form>
+    </div></div>
+
+    <!-- SYNC MODAL -->
+    <div class="modal-overlay" id="syncModal"><div class="modal" style="max-width:480px;">
+        <div class="modal-title">🔑 Sincronizar Datos<button class="modal-close" onclick="closeModal('syncModal')">✕</button></div>
+        <div style="display:flex;gap:0;margin-bottom:20px;border-radius:12px;overflow:hidden;border:2px solid #eee;">
+            <button id="tabGenerar" class="sync-tab-btn active" onclick="switchSyncTab('generar')" style="background:var(--accent);color:white;">📤 Generar Clave</button>
+            <button id="tabRestaurar" class="sync-tab-btn inactive" onclick="switchSyncTab('restaurar')" style="background:#f5f5f5;color:#888;">📥 Restaurar</button>
         </div>
-    </div>
+        <div id="panelGenerar">
+            <div style="background:rgba(248,249,255,0.9);border-radius:14px;padding:18px;margin-bottom:15px;">
+                <p style="font-size:0.85rem;color:#666;margin-bottom:15px;">Se generará una clave con <strong>todos tus datos</strong>. Cópiala y pégala en otro teléfono.</p>
+                <button onclick="generateKey()" class="btn btn-primary" style="width:100%;justify-content:center;">🔑 Generar Mi Clave</button>
+            </div>
+            <div id="keyResult" style="display:none;">
+                <div style="background:#1a1a2e;border-radius:14px;padding:18px;margin-bottom:12px;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+                        <span style="color:#e94560;font-weight:800;font-size:0.85rem;">🔑 TU CLAVE</span>
+                        <span id="keyDate" style="color:rgba(255,255,255,0.4);font-size:0.75rem;"></span>
+                    </div>
+                    <textarea id="keyOutput" readonly style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;border-radius:10px;padding:12px;font-size:0.65rem;font-family:monospace;resize:none;height:120px;line-height:1.4;"></textarea>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;">
+                    <button onclick="copyKey()" class="btn btn-success" style="justify-content:center;">📋 Copiar</button>
+                    <button onclick="shareKey()" class="btn btn-primary" style="justify-content:center;">📤 Compartir</button>
+                </div>
+                <div style="background:#fff3cd;border-radius:12px;padding:14px;">
+                    <strong style="font-size:0.82rem;">💡 Pasos:</strong>
+                    <ol style="font-size:0.8rem;color:#666;margin-top:6px;padding-left:16px;line-height:1.9;">
+                        <li>Copia o comparte la clave</li>
+                        <li>En otro teléfono abre esta app</li>
+                        <li>Ve a 🔑 Sincronizar → Restaurar</li>
+                        <li>Pega la clave y listo 🎉</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="panelRestaurar" style="display:none;">
+            <div style="background:rgba(248,249,255,0.9);border-radius:14px;padding:18px;margin-bottom:15px;">
+                <p style="font-size:0.85rem;color:#666;margin-bottom:12px;">Pega la clave del otro teléfono:</p>
+                <textarea id="keyInput" placeholder="Pega tu clave aquí..." style="width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:10px;font-family:monospace;font-size:0.7rem;resize:none;height:140px;background:#fafafa;line-height:1.4;"></textarea>
+                <button onclick="restoreKey()" class="btn btn-success" style="width:100%;justify-content:center;margin-top:12px;">🔄 Restaurar Datos</button>
+            </div>
+            <div style="background:#d4edda;border-radius:12px;padding:14px;">
+                <strong style="font-size:0.82rem;color:#155724;">✅ Instrucciones</strong>
+                <ol style="font-size:0.8rem;color:#155724;margin-top:6px;padding-left:16px;line-height:1.9;">
+                    <li>Genera la clave en el otro teléfono</li>
+                    <li>Cópiala por WhatsApp o correo</li>
+                    <li>Pégala aquí arriba</li>
+                    <li>Pulsa Restaurar 🎉</li>
+                </ol>
+            </div>
+        </div>
+    </div></div>
 
     <div class="notification" id="notification">
         <span id="notifIcon">✅</span>
-        <span id="notifText">Guardado exitosamente</span>
+        <span id="notifText">Guardado</span>
     </div>
 
     <footer class="footer">
-        <p>🐾 DalmataTracker - Hecho con ❤️ para tu mejor amiga | Datos guardados localmente en tu navegador</p>
+        <p>🐾 DalmataTracker — Hecho con ❤️ para tu mejor amiga</p>
     </footer>
 
     <script>
     // ==================== DATA ====================
-    function getData(key) {
-        const d = localStorage.getItem(key);
-        return d ? JSON.parse(d) : [];
-    }
-    function setData(key, data) {
-        localStorage.setItem(key, JSON.stringify(data));
-    }
-    function getObject(key) {
-        const d = localStorage.getItem(key);
-        return d ? JSON.parse(d) : {};
-    }
-    function setObject(key, data) {
-        localStorage.setItem(key, JSON.stringify(data));
-    }
-    function generateId() {
-        return Date.now().toString(36) + Math.random().toString(36).substr(2);
-    }
+    function getData(key){ const d=localStorage.getItem(key); return d?JSON.parse(d):[]; }
+    function setData(key,data){ localStorage.setItem(key,JSON.stringify(data)); }
+    function getObject(key){ const d=localStorage.getItem(key); return d?JSON.parse(d):{}; }
+    function setObject(key,data){ localStorage.setItem(key,JSON.stringify(data)); }
+    function generateId(){ return Date.now().toString(36)+Math.random().toString(36).substr(2); }
 
-    // ==================== NAVIGATION ====================
-    function showSection(sectionId, btn) {
-        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-        document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-        document.getElementById('section-' + sectionId).classList.add('active');
-        if (btn) btn.classList.add('active');
+    // ==================== NAV ====================
+    function showSection(id,btn){
+        document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+        document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+        document.getElementById('section-'+id).classList.add('active');
+        if(btn) btn.classList.add('active');
     }
 
     // ==================== MODALS ====================
-    function openModal(id) { document.getElementById(id).classList.add('active'); }
-    function closeModal(id) { document.getElementById(id).classList.remove('active'); }
-
-    document.querySelectorAll('.modal-overlay').forEach(overlay => {
-        overlay.addEventListener('click', e => {
-            if (e.target === overlay) overlay.classList.remove('active');
-        });
+    function openModal(id){ document.getElementById(id).classList.add('active'); }
+    function closeModal(id){ document.getElementById(id).classList.remove('active'); }
+    document.querySelectorAll('.modal-overlay').forEach(o=>{
+        o.addEventListener('click',e=>{ if(e.target===o) o.classList.remove('active'); });
     });
 
-    // ==================== NOTIFICATIONS ====================
-    function showNotification(message, type = 'success') {
-        const notif = document.getElementById('notification');
-        document.getElementById('notifIcon').textContent = type === 'success' ? '✅' : '❌';
-        document.getElementById('notifText').textContent = message;
-        notif.className = 'notification ' + type + ' show';
-        setTimeout(() => notif.classList.remove('show'), 3000);
+    // ==================== NOTIF ====================
+    function showNotification(msg,type='success'){
+        const n=document.getElementById('notification');
+        document.getElementById('notifIcon').textContent=type==='success'?'✅':'❌';
+        document.getElementById('notifText').textContent=msg;
+        n.className='notification '+type+' show';
+        setTimeout(()=>n.classList.remove('show'),3000);
     }
 
-    // ==================== DATE HELPERS ====================
-    function updateDate() {
-        const now = new Date();
-        document.getElementById('currentDate').textContent =
-            now.toLocaleDateString('es-ES', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
+    // ==================== DATE ====================
+    function updateDate(){
+        document.getElementById('currentDate').textContent=
+            new Date().toLocaleDateString('es-ES',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
     }
-
-    function formatDate(dateStr) {
-        if (!dateStr) return '--';
-        const d = new Date(dateStr + 'T00:00:00');
-        return d.toLocaleDateString('es-ES', { day:'2-digit', month:'short', year:'numeric' });
+    function formatDate(d){
+        if(!d) return '--';
+        return new Date(d+'T00:00:00').toLocaleDateString('es-ES',{day:'2-digit',month:'short',year:'numeric'});
     }
-
-    function calculateAge(birthDate) {
-        if (!birthDate) return 'Sin edad';
-        const birth = new Date(birthDate);
-        const now = new Date();
-        let years = now.getFullYear() - birth.getFullYear();
-        let months = now.getMonth() - birth.getMonth();
-        if (months < 0) { years--; months += 12; }
-        if (years > 0) return years + ' año' + (years > 1 ? 's' : '') + (months > 0 ? ' y ' + months + ' mes' + (months > 1 ? 'es' : '') : '');
-        return months + ' mes' + (months > 1 ? 'es' : '');
+    function calculateAge(b){
+        if(!b) return 'Sin edad';
+        const birth=new Date(b),now=new Date();
+        let y=now.getFullYear()-birth.getFullYear(),m=now.getMonth()-birth.getMonth();
+        if(m<0){y--;m+=12;}
+        if(y>0) return y+' año'+(y>1?'s':'')+(m>0?' y '+m+' mes'+(m>1?'es':''):'');
+        return m+' mes'+(m>1?'es':'');
     }
 
     // ==================== PROFILE ====================
-    function saveProfile(e) {
+    function saveProfile(e){
         e.preventDefault();
-        const profile = {
-            name: document.getElementById('profileName').value,
-            birth: document.getElementById('profileBirth').value,
-            gender: document.getElementById('profileGender').value,
-            color: document.getElementById('profileColor').value,
-            chip: document.getElementById('profileChip').value,
-            vet: document.getElementById('profileVet').value,
-            vetPhone: document.getElementById('profileVetPhone').value,
-            sterilized: document.getElementById('profileSterilized').value,
-            notes: document.getElementById('profileNotes').value
-        };
-        setObject('profile', profile);
+        setObject('profile',{
+            name:document.getElementById('profileName').value,
+            birth:document.getElementById('profileBirth').value,
+            gender:document.getElementById('profileGender').value,
+            color:document.getElementById('profileColor').value,
+            chip:document.getElementById('profileChip').value,
+            vet:document.getElementById('profileVet').value,
+            vetPhone:document.getElementById('profileVetPhone').value,
+            sterilized:document.getElementById('profileSterilized').value,
+            notes:document.getElementById('profileNotes').value
+        });
         loadProfile();
-        showNotification('Perfil guardado exitosamente');
+        showNotification('Perfil guardado');
     }
-
-    function loadProfile() {
-        const p = getObject('profile');
-        if (p.name) { document.getElementById('displayName').textContent = p.name; document.getElementById('profileName').value = p.name; }
-        if (p.birth) { document.getElementById('displayAge').textContent = calculateAge(p.birth); document.getElementById('profileBirth').value = p.birth; }
-        if (p.gender) { document.getElementById('displayGender').textContent = p.gender; document.getElementById('profileGender').value = p.gender; }
-        if (p.color) { document.getElementById('displayColor').textContent = p.color; document.getElementById('profileColor').value = p.color; }
-        if (p.chip) { document.getElementById('displayChip').textContent = 'Chip: ' + p.chip; document.getElementById('profileChip').value = p.chip; }
-        if (p.vet) document.getElementById('profileVet').value = p.vet;
-        if (p.vetPhone) document.getElementById('profileVetPhone').value = p.vetPhone;
-        if (p.sterilized) document.getElementById('profileSterilized').value = p.sterilized;
-        if (p.notes) document.getElementById('profileNotes').value = p.notes;
-
-        const avatar = localStorage.getItem('avatarImg');
-        if (avatar) {
-            document.getElementById('profileAvatar').innerHTML =
-                `<img src="${avatar}" alt="foto"><label class="profile-avatar-upload" for="avatarInput">📷</label><input type="file" id="avatarInput" accept="image/*" style="display:none" onchange="uploadAvatar(event)">`;
-        }
+    function loadProfile(){
+        const p=getObject('profile');
+        if(p.name){document.getElementById('displayName').textContent=p.name;document.getElementById('profileName').value=p.name;}
+        if(p.birth){document.getElementById('displayAge').textContent=calculateAge(p.birth);document.getElementById('profileBirth').value=p.birth;}
+        if(p.gender){document.getElementById('displayGender').textContent=p.gender;document.getElementById('profileGender').value=p.gender;}
+        if(p.color){document.getElementById('displayColor').textContent=p.color;document.getElementById('profileColor').value=p.color;}
+        if(p.chip){document.getElementById('displayChip').textContent='Chip: '+p.chip;document.getElementById('profileChip').value=p.chip;}
+        if(p.vet) document.getElementById('profileVet').value=p.vet;
+        if(p.vetPhone) document.getElementById('profileVetPhone').value=p.vetPhone;
+        if(p.sterilized) document.getElementById('profileSterilized').value=p.sterilized;
+        if(p.notes) document.getElementById('profileNotes').value=p.notes;
+        const av=localStorage.getItem('avatarImg');
+        if(av) document.getElementById('profileAvatar').innerHTML=`<img src="${av}"><label class="profile-avatar-upload" for="avatarInput">📷</label><input type="file" id="avatarInput" accept="image/*" style="display:none" onchange="uploadAvatar(event)">`;
     }
-
-    function uploadAvatar(e) {
-        const file = e.target.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = ev => {
-                localStorage.setItem('avatarImg', ev.target.result);
-                loadProfile();
-                showNotification('Foto actualizada');
-            };
-            reader.readAsDataURL(file);
-        }
+    function uploadAvatar(e){
+        const f=e.target.files[0];
+        if(f){const r=new FileReader();r.onload=ev=>{localStorage.setItem('avatarImg',ev.target.result);loadProfile();showNotification('Foto actualizada');};r.readAsDataURL(f);}
     }
 
     // ==================== GROWTH ====================
-    function addGrowthRecord(e) {
+    function addGrowthRecord(e){
         e.preventDefault();
-        const records = getData('growthRecords');
-
-        const weekNum = parseInt(document.getElementById('growthWeekNum').value);
-        // Check if week already exists
-        const existing = records.find(r => r.weekNum === weekNum);
-        if (existing) {
-            showNotification('Ya existe un registro para la semana ' + weekNum + '. Elimínalo primero.', 'error');
-            return;
-        }
-
-        const newRecord = {
-            id: generateId(),
-            weekNum: weekNum,
-            date: document.getElementById('growthDate').value,
-            height: parseFloat(document.getElementById('growthHeight').value) || null,
-            weight: parseFloat(document.getElementById('growthWeight').value),
-            length: parseFloat(document.getElementById('growthLength').value) || null,
-            chest: parseFloat(document.getElementById('growthChest').value) || null,
-            notes: document.getElementById('growthNotes').value
-        };
-
-        records.push(newRecord);
-        setData('growthRecords', records);
-        closeModal('growthModal');
-        e.target.reset();
-
-        // Auto-suggest next week number
-        const nextWeek = weekNum + 1;
-        document.getElementById('growthWeekNum').value = nextWeek;
-
-        loadGrowth();
-        updateDashboard();
-        showNotification('✅ Semana ' + weekNum + ' registrada con éxito');
+        const records=getData('growthRecords');
+        const wn=parseInt(document.getElementById('growthWeekNum').value);
+        if(records.find(r=>r.weekNum===wn)){showNotification('Semana '+wn+' ya existe','error');return;}
+        records.push({
+            id:generateId(),weekNum:wn,
+            date:document.getElementById('growthDate').value,
+            height:parseFloat(document.getElementById('growthHeight').value)||null,
+            weight:parseFloat(document.getElementById('growthWeight').value),
+            length:parseFloat(document.getElementById('growthLength').value)||null,
+            chest:parseFloat(document.getElementById('growthChest').value)||null,
+            notes:document.getElementById('growthNotes').value
+        });
+        setData('growthRecords',records);
+        closeModal('growthModal');e.target.reset();
+        document.getElementById('growthWeekNum').value=wn+1;
+        loadGrowth();updateDashboard();
+        showNotification('Semana '+wn+' registrada');
     }
-
-    function loadGrowth() {
-        const records = getData('growthRecords').sort((a,b) => a.weekNum - b.weekNum);
-        const list = document.getElementById('growthList');
-
-        // Update hero stats
-        document.getElementById('growthTotalWeeks').textContent = records.length;
-
-        if (records.length === 0) {
-            list.innerHTML = `<div class="empty-state">
-                <div class="empty-icon">📏</div>
-                <p>¡Registra el primer dato de tu dálmata!</p>
-                <button class="btn btn-primary" onclick="openModal('growthModal')">➕ Agregar primer registro</button>
-            </div>`;
-            // Clear charts and summary
-            ['growthCurrentHeight','growthCurrentWeight','growthCurrentLength',
-             'growthLastWeekDiff','growthBestWeek','growthTotalGrowthCm','growthTotalGrowthKg']
-            .forEach(id => document.getElementById(id).textContent = '--');
-            document.getElementById('heightChartBars').innerHTML = '';
-            document.getElementById('weightChartBars').innerHTML = '';
-            updateDashGrowth(null, null);
-            return;
+    function loadGrowth(){
+        const records=getData('growthRecords').sort((a,b)=>a.weekNum-b.weekNum);
+        const list=document.getElementById('growthList');
+        document.getElementById('growthTotalWeeks').textContent=records.length;
+        if(records.length===0){
+            list.innerHTML='<div class="empty-state"><div class="empty-icon">📏</div><p>¡Registra el primer dato!</p><button class="btn btn-primary" onclick="openModal(\'growthModal\')">➕ Primer registro</button></div>';
+            ['growthCurrentHeight','growthCurrentWeight','growthCurrentLength','growthLastWeekDiff','growthBestWeek','growthTotalGrowthCm','growthTotalGrowthKg'].forEach(id=>document.getElementById(id).textContent='--');
+            document.getElementById('heightChartBars').innerHTML='';
+            document.getElementById('weightGrowthBars').innerHTML='';
+            updateDashGrowth(null,null);return;
         }
-
-        const first = records[0];
-        const last = records[records.length - 1];
-        const prev = records.length > 1 ? records[records.length - 2] : null;
-
-        // Summary cards
-        document.getElementById('growthCurrentHeight').textContent = last.height ? last.height + ' cm' : '--';
-        document.getElementById('growthCurrentWeight').textContent = last.weight + ' kg';
-        document.getElementById('growthCurrentLength').textContent = last.length ? last.length + ' cm' : '--';
-
-        // Total growth
-        const totalCm = last.height && first.height ? (last.height - first.height).toFixed(1) + ' cm' : '--';
-        const totalKg = (last.weight - first.weight).toFixed(1) + ' kg';
-        document.getElementById('growthTotalGrowthCm').textContent = totalCm;
-        document.getElementById('growthTotalGrowthKg').textContent = '+' + totalKg;
-
-        // Last week diff
-        if (prev && last.height && prev.height) {
-            const diff = (last.height - prev.height).toFixed(1);
-            document.getElementById('growthLastWeekDiff').textContent = (diff >= 0 ? '+' : '') + diff + ' cm';
-        } else if (prev) {
-            document.getElementById('growthLastWeekDiff').textContent = 'Sin altura';
-        } else {
-            document.getElementById('growthLastWeekDiff').textContent = 'Primer registro';
-        }
-
-        // Best week (highest height growth)
-        let bestDiff = 0;
-        let bestWeekNum = '--';
-        for (let i = 1; i < records.length; i++) {
-            if (records[i].height && records[i-1].height) {
-                const d = records[i].height - records[i-1].height;
-                if (d > bestDiff) { bestDiff = d; bestWeekNum = 'Sem. ' + records[i].weekNum; }
-            }
-        }
-        document.getElementById('growthBestWeek').textContent = bestWeekNum !== '--'
-            ? bestWeekNum + ' (+' + bestDiff.toFixed(1) + 'cm)' : '--';
-
-        // Charts
-        buildMiniChart('heightChartBars', records, 'height', 'purple-bar', 'cm');
-        buildMiniChart('weightChartBars', records, 'weight', 'pink-bar', 'kg');
-
-        // Records list
-        list.innerHTML = [...records].reverse().map((r, idx) => {
-            const isFirst = r.weekNum === first.weekNum;
-            const isLast = r.weekNum === last.weekNum;
-
-            // Calculate diffs vs previous record
-            const prevRec = records.find(x => x.weekNum === r.weekNum - 1) ||
-                            records[records.indexOf(r) - 1 >= 0 ? records.indexOf(r) - 1 : -1];
-            const actualPrev = records[records.indexOf(r) - 1];
-
-            let heightDiff = null, weightDiff = null;
-            if (actualPrev) {
-                if (r.height && actualPrev.height) heightDiff = (r.height - actualPrev.height).toFixed(1);
-                weightDiff = (r.weight - actualPrev.weight).toFixed(2);
-            }
-
-            const diffHtml = actualPrev ? `
-                <div class="growth-diff">
-                    ${heightDiff !== null ? `<span class="growth-diff-item ${heightDiff > 0 ? 'up' : heightDiff < 0 ? 'down' : 'same'}">
-                        📏 ${heightDiff > 0 ? '+' : ''}${heightDiff} cm
-                    </span>` : ''}
-                    <span class="growth-diff-item ${weightDiff > 0 ? 'up' : weightDiff < 0 ? 'down' : 'same'}">
-                        ⚖️ ${weightDiff > 0 ? '+' : ''}${weightDiff} kg
-                    </span>
-                </div>` : `<span class="badge badge-info">📍 Medida inicial</span>`;
-
-            const milestone = isLast && records.length > 1 ? '<div class="milestone-badge">🏆 Última medición</div>' : '';
-
-            return `<div class="growth-record-card ${isFirst ? 'first-record' : ''}">
-                ${milestone}
-                <div class="growth-week-badge ${isFirst ? 'first' : ''}">
-                    <div class="growth-week-num">${r.weekNum}</div>
-                    <div class="growth-week-label">SEM.</div>
-                </div>
-                <div class="growth-record-info">
-                    <div class="growth-record-date">📅 ${formatDate(r.date)}</div>
-                    <div class="growth-record-values">
-                        ${r.height ? `<div class="growth-value-item">
-                            <span class="growth-value-icon">📏</span>
-                            <div><div class="growth-value-text">${r.height} cm</div><div class="growth-value-label">Altura</div></div>
-                        </div>` : ''}
-                        <div class="growth-value-item">
-                            <span class="growth-value-icon">⚖️</span>
-                            <div><div class="growth-value-text">${r.weight} kg</div><div class="growth-value-label">Peso</div></div>
-                        </div>
-                        ${r.length ? `<div class="growth-value-item">
-                            <span class="growth-value-icon">📐</span>
-                            <div><div class="growth-value-text">${r.length} cm</div><div class="growth-value-label">Largo</div></div>
-                        </div>` : ''}
-                        ${r.chest ? `<div class="growth-value-item">
-                            <span class="growth-value-icon">🌀</span>
-                            <div><div class="growth-value-text">${r.chest} cm</div><div class="growth-value-label">Pecho</div></div>
-                        </div>` : ''}
-                    </div>
-                    ${diffHtml}
-                    ${r.notes ? `<div style="font-size:0.82rem;color:#666;margin-top:6px;">💬 ${r.notes}</div>` : ''}
-                </div>
-                <div class="growth-record-actions">
-                    <button class="btn btn-danger" onclick="deleteGrowthRecord('${r.id}')">🗑️</button>
-                </div>
-            </div>`;
+        const first=records[0],last=records[records.length-1],prev=records.length>1?records[records.length-2]:null;
+        document.getElementById('growthCurrentHeight').textContent=last.height?last.height+' cm':'--';
+        document.getElementById('growthCurrentWeight').textContent=last.weight+' kg';
+        document.getElementById('growthCurrentLength').textContent=last.length?last.length+' cm':'--';
+        document.getElementById('growthTotalGrowthCm').textContent=last.height&&first.height?(last.height-first.height).toFixed(1)+' cm':'--';
+        document.getElementById('growthTotalGrowthKg').textContent='+'+(last.weight-first.weight).toFixed(1)+' kg';
+        if(prev&&last.height&&prev.height){document.getElementById('growthLastWeekDiff').textContent=((last.height-prev.height)>=0?'+':'')+(last.height-prev.height).toFixed(1)+' cm';}
+        else document.getElementById('growthLastWeekDiff').textContent=prev?'Sin altura':'Primer reg.';
+        let bestD=0,bestW='--';
+        for(let i=1;i<records.length;i++){if(records[i].height&&records[i-1].height){const d=records[i].height-records[i-1].height;if(d>bestD){bestD=d;bestW='S'+records[i].weekNum;}}}
+        document.getElementById('growthBestWeek').textContent=bestW!=='--'?bestW+' (+'+bestD.toFixed(1)+'cm)':'--';
+        buildMiniChart('heightChartBars',records,'height','purple-bar','cm');
+        buildMiniChart('weightGrowthBars',records,'weight','pink-bar','kg');
+        list.innerHTML=[...records].reverse().map(r=>{
+            const isFirst=r.weekNum===first.weekNum,isLast=r.weekNum===last.weekNum;
+            const ap=records[records.indexOf(r)-1];
+            let hd=null,wd=null;
+            if(ap){if(r.height&&ap.height)hd=(r.height-ap.height).toFixed(1);wd=(r.weight-ap.weight).toFixed(2);}
+            const diff=ap?`<div class="growth-diff">${hd!==null?`<span class="growth-diff-item ${hd>0?'up':hd<0?'down':'same'}">📏 ${hd>0?'+':''}${hd} cm</span>`:''}<span class="growth-diff-item ${wd>0?'up':wd<0?'down':'same'}">⚖️ ${wd>0?'+':''}${wd} kg</span></div>`:'<span class="badge badge-info">📍 Medida inicial</span>';
+            return `<div class="growth-record-card ${isFirst?'first-record':''}">${isLast&&records.length>1?'<div class="milestone-badge">🏆 Última</div>':''}<div class="growth-week-badge ${isFirst?'first':''}"><div class="growth-week-num">${r.weekNum}</div><div class="growth-week-label">SEM.</div></div><div class="growth-record-info"><div class="growth-record-date">📅 ${formatDate(r.date)}</div><div class="growth-record-values">${r.height?`<div class="growth-value-item"><span class="growth-value-icon">📏</span><div><div class="growth-value-text">${r.height} cm</div><div class="growth-value-label">Altura</div></div></div>`:''}<div class="growth-value-item"><span class="growth-value-icon">⚖️</span><div><div class="growth-value-text">${r.weight} kg</div><div class="growth-value-label">Peso</div></div></div>${r.length?`<div class="growth-value-item"><span class="growth-value-icon">📐</span><div><div class="growth-value-text">${r.length} cm</div><div class="growth-value-label">Largo</div></div></div>`:''}</div>${diff}${r.notes?'<div style="font-size:0.82rem;color:#666;margin-top:6px;">💬 '+r.notes+'</div>':''}</div><button class="btn btn-danger" onclick="deleteGrowthRecord('${r.id}')">🗑️</button></div>`;
         }).join('');
-
-        // Dashboard
-        updateDashGrowth(last, prev);
-
-        // Suggest next week in modal
-        document.getElementById('growthWeekNum').value = last.weekNum + 1;
+        updateDashGrowth(last,prev);
+        document.getElementById('growthWeekNum').value=last.weekNum+1;
     }
-
-    function buildMiniChart(containerId, records, field, barClass, unit) {
-        const container = document.getElementById(containerId);
-        const validRecords = records.filter(r => r[field] != null).slice(-10);
-
-        if (validRecords.length === 0) {
-            container.innerHTML = '<div style="text-align:center;padding:20px;color:#ccc;font-size:0.8rem;">Sin datos</div>';
-            return;
-        }
-
-        const values = validRecords.map(r => r[field]);
-        const maxVal = Math.max(...values);
-        const minVal = Math.min(...values);
-        const range = maxVal - minVal || 1;
-
-        container.innerHTML = validRecords.map(r => {
-            const val = r[field];
-            const heightPct = 20 + ((val - minVal) / range) * 75;
-            return `<div class="mini-bar-wrapper">
-                <div class="mini-bar ${barClass}" style="height:${heightPct}%">
-                    <div class="mini-bar-val">${val}</div>
-                </div>
-                <div class="mini-bar-lbl">S${r.weekNum}</div>
-            </div>`;
-        }).join('');
+    function buildMiniChart(cid,records,field,barClass,unit){
+        const c=document.getElementById(cid),vr=records.filter(r=>r[field]!=null).slice(-10);
+        if(!vr.length){c.innerHTML='<div style="text-align:center;padding:20px;color:#ccc;font-size:0.8rem;">Sin datos</div>';return;}
+        const vals=vr.map(r=>r[field]),mx=Math.max(...vals),mn=Math.min(...vals),rg=mx-mn||1;
+        c.innerHTML=vr.map(r=>{const v=r[field],h=20+((v-mn)/rg)*75;return `<div class="mini-bar-wrapper"><div class="mini-bar ${barClass}" style="height:${h}%"><div class="mini-bar-val">${v}</div></div><div class="mini-bar-lbl">S${r.weekNum}</div></div>`;}).join('');
     }
-
-    function deleteGrowthRecord(id) {
-        if (confirm('¿Eliminar este registro de crecimiento?')) {
-            let records = getData('growthRecords');
-            records = records.filter(r => r.id !== id);
-            setData('growthRecords', records);
-            loadGrowth();
-            updateDashboard();
-            showNotification('Registro eliminado');
-        }
+    function deleteGrowthRecord(id){
+        if(confirm('¿Eliminar?')){let r=getData('growthRecords');r=r.filter(x=>x.id!==id);setData('growthRecords',r);loadGrowth();updateDashboard();showNotification('Eliminado');}
     }
-
-    function updateDashGrowth(last, prev) {
-        const container = document.getElementById('dashGrowth');
-        if (!last) {
-            container.innerHTML = `<div class="empty-state">
-                <div class="empty-icon">📏</div>
-                <p>Ve a la sección Crecimiento para registrar</p>
-            </div>`;
-            return;
-        }
-
-        const weightDiff = prev ? (last.weight - prev.weight).toFixed(2) : null;
-        const heightDiff = (prev && last.height && prev.height) ? (last.height - prev.height).toFixed(1) : null;
-
-        container.innerHTML = `
-            <div style="display:flex;gap:15px;flex-wrap:wrap;margin-bottom:12px;">
-                <div style="flex:1;min-width:100px;background:#f8f9ff;border-radius:10px;padding:12px;text-align:center;">
-                    <div style="font-size:1.5rem;">📏</div>
-                    <div style="font-size:1.3rem;font-weight:800;color:#1a1a2e;">${last.height ? last.height + ' cm' : '--'}</div>
-                    <div style="font-size:0.75rem;color:#888;">Altura</div>
-                </div>
-                <div style="flex:1;min-width:100px;background:#f8f9ff;border-radius:10px;padding:12px;text-align:center;">
-                    <div style="font-size:1.5rem;">⚖️</div>
-                    <div style="font-size:1.3rem;font-weight:800;color:#1a1a2e;">${last.weight} kg</div>
-                    <div style="font-size:0.75rem;color:#888;">Peso</div>
-                </div>
-                <div style="flex:1;min-width:100px;background:#f8f9ff;border-radius:10px;padding:12px;text-align:center;">
-                    <div style="font-size:1.5rem;">🗓️</div>
-                    <div style="font-size:1rem;font-weight:800;color:#9b59b6;">Sem. ${last.weekNum}</div>
-                    <div style="font-size:0.75rem;color:#888;">${formatDate(last.date)}</div>
-                </div>
-            </div>
-            ${weightDiff !== null ? `<div style="display:flex;gap:8px;flex-wrap:wrap;">
-                ${heightDiff !== null ? `<span style="background:#d4edda;color:#155724;padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:700;">
-                    📏 ${heightDiff > 0 ? '+' : ''}${heightDiff} cm esta semana
-                </span>` : ''}
-                <span style="background:${weightDiff >= 0 ? '#d4edda' : '#f8d7da'};color:${weightDiff >= 0 ? '#155724' : '#721c24'};padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:700;">
-                    ⚖️ ${weightDiff > 0 ? '+' : ''}${weightDiff} kg esta semana
-                </span>
-            </div>` : ''}
-        `;
+    function updateDashGrowth(last,prev){
+        const c=document.getElementById('dashGrowth');
+        if(!last){c.innerHTML='<div class="empty-state"><div class="empty-icon">📏</div><p>Ve a Crecimiento para registrar</p></div>';return;}
+        const wd=prev?(last.weight-prev.weight).toFixed(2):null;
+        const hd=(prev&&last.height&&prev.height)?(last.height-prev.height).toFixed(1):null;
+        c.innerHTML=`<div style="display:flex;gap:15px;flex-wrap:wrap;margin-bottom:12px;"><div style="flex:1;min-width:80px;background:rgba(248,249,255,0.9);border-radius:10px;padding:12px;text-align:center;"><div style="font-size:1.5rem;">📏</div><div style="font-size:1.2rem;font-weight:800;">${last.height?last.height+' cm':'--'}</div><div style="font-size:0.75rem;color:#888;">Altura</div></div><div style="flex:1;min-width:80px;background:rgba(248,249,255,0.9);border-radius:10px;padding:12px;text-align:center;"><div style="font-size:1.5rem;">⚖️</div><div style="font-size:1.2rem;font-weight:800;">${last.weight} kg</div><div style="font-size:0.75rem;color:#888;">Peso</div></div><div style="flex:1;min-width:80px;background:rgba(248,249,255,0.9);border-radius:10px;padding:12px;text-align:center;"><div style="font-size:1.5rem;">🗓️</div><div style="font-size:1rem;font-weight:800;color:#9b59b6;">Sem. ${last.weekNum}</div><div style="font-size:0.75rem;color:#888;">${formatDate(last.date)}</div></div></div>${wd!==null?`<div style="display:flex;gap:8px;flex-wrap:wrap;">${hd!==null?`<span style="background:#d4edda;color:#155724;padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:700;">📏 ${hd>0?'+':''}${hd} cm</span>`:''}<span style="background:${wd>=0?'#d4edda':'#f8d7da'};color:${wd>=0?'#155724':'#721c24'};padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:700;">⚖️ ${wd>0?'+':''}${wd} kg</span></div>`:''}`;
     }
 
     // ==================== VACCINES ====================
-    function addVaccine(e) {
-        e.preventDefault();
-        const vaccines = getData('vaccines');
-        vaccines.push({
-            id: generateId(),
-            type: document.getElementById('vaccineType').value,
-            name: document.getElementById('vaccineName').value,
-            date: document.getElementById('vaccineDate').value,
-            next: document.getElementById('vaccineNext').value,
-            vet: document.getElementById('vaccineVet').value,
-            notes: document.getElementById('vaccineNotes').value
-        });
-        setData('vaccines', vaccines);
-        closeModal('vaccineModal');
-        e.target.reset();
-        loadVaccines();
-        updateDashboard();
-        showNotification('Vacuna registrada');
-    }
-
-    function loadVaccines() {
-        const vaccines = getData('vaccines');
-        const table = document.getElementById('vaccineTable');
-        if (vaccines.length === 0) {
-            table.innerHTML = '<tr><td colspan="7"><div class="empty-state"><div class="empty-icon">💉</div><p>No hay vacunas registradas</p></div></td></tr>';
-            return;
-        }
-        table.innerHTML = vaccines.sort((a,b) => new Date(b.date) - new Date(a.date)).map(v => {
-            const today = new Date();
-            const nextDate = v.next ? new Date(v.next) : null;
-            let status = '<span class="badge badge-success">✅ Al día</span>';
-            if (nextDate) {
-                const diff = (nextDate - today) / (1000*60*60*24);
-                if (diff < 0) status = '<span class="badge badge-danger">⚠️ Vencida</span>';
-                else if (diff < 30) status = '<span class="badge badge-warning">⏰ Próxima</span>';
-            }
-            return `<tr>
-                <td><span class="badge badge-info">${v.type}</span></td>
-                <td><strong>${v.name}</strong></td>
-                <td>${formatDate(v.date)}</td>
-                <td>${v.next ? formatDate(v.next) : '--'}</td>
-                <td>${v.vet || '--'}</td>
-                <td>${status}</td>
-                <td><button class="btn btn-danger" onclick="deleteItem('vaccines','${v.id}',loadVaccines)">🗑️</button></td>
-            </tr>`;
-        }).join('');
-    }
+    function addVaccine(e){e.preventDefault();const v=getData('vaccines');v.push({id:generateId(),type:document.getElementById('vaccineType').value,name:document.getElementById('vaccineName').value,date:document.getElementById('vaccineDate').value,next:document.getElementById('vaccineNext').value,vet:document.getElementById('vaccineVet').value,notes:document.getElementById('vaccineNotes').value});setData('vaccines',v);closeModal('vaccineModal');e.target.reset();loadVaccines();updateDashboard();showNotification('Vacuna registrada');}
+    function loadVaccines(){const v=getData('vaccines'),t=document.getElementById('vaccineTable');if(!v.length){t.innerHTML='<tr><td colspan="7"><div class="empty-state"><div class="empty-icon">💉</div><p>Sin vacunas</p></div></td></tr>';return;}t.innerHTML=v.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(v=>{const n=v.next?new Date(v.next):null;let s='<span class="badge badge-success">✅ Al día</span>';if(n){const d=(n-new Date())/(864e5);if(d<0)s='<span class="badge badge-danger">⚠️ Vencida</span>';else if(d<30)s='<span class="badge badge-warning">⏰ Próxima</span>';}return `<tr><td><span class="badge badge-info">${v.type}</span></td><td><strong>${v.name}</strong></td><td>${formatDate(v.date)}</td><td>${v.next?formatDate(v.next):'--'}</td><td>${v.vet||'--'}</td><td>${s}</td><td><button class="btn btn-danger" onclick="deleteItem('vaccines','${v.id}',loadVaccines)">🗑️</button></td></tr>`;}).join('');}
 
     // ==================== MEDICAL ====================
-    function addMedical(e) {
-        e.preventDefault();
-        const medical = getData('medical');
-        medical.push({
-            id: generateId(),
-            date: document.getElementById('medicalDate').value,
-            reason: document.getElementById('medicalReason').value,
-            diagnosis: document.getElementById('medicalDiagnosis').value,
-            treatment: document.getElementById('medicalTreatment').value,
-            vet: document.getElementById('medicalVet').value,
-            cost: document.getElementById('medicalCost').value
-        });
-        setData('medical', medical);
-        closeModal('medicalModal');
-        e.target.reset();
-        loadMedical();
-        updateDashboard();
-        showNotification('Registro médico guardado');
-    }
-
-    function loadMedical() {
-        const medical = getData('medical');
-        const container = document.getElementById('medicalTimeline');
-        if (medical.length === 0) {
-            container.innerHTML = '<div class="empty-state"><div class="empty-icon">🏥</div><p>No hay registros médicos</p></div>';
-            return;
-        }
-        container.innerHTML = medical.sort((a,b) => new Date(b.date) - new Date(a.date)).map(m => `
-            <div class="timeline-item">
-                <div class="timeline-date">${formatDate(m.date)} ${m.cost ? '| $'+parseFloat(m.cost).toFixed(2) : ''}</div>
-                <div class="timeline-title">${m.reason}</div>
-                <div class="timeline-desc">
-                    ${m.diagnosis ? '<strong>Diagnóstico:</strong> '+m.diagnosis+'<br>' : ''}
-                    ${m.treatment ? '<strong>Tratamiento:</strong> '+m.treatment+'<br>' : ''}
-                    ${m.vet ? '<em>Dr. '+m.vet+'</em>' : ''}
-                </div>
-                <button class="btn btn-danger" style="margin-top:10px;" onclick="deleteItem('medical','${m.id}',loadMedical)">🗑️ Eliminar</button>
-            </div>
-        `).join('');
-    }
+    function addMedical(e){e.preventDefault();const m=getData('medical');m.push({id:generateId(),date:document.getElementById('medicalDate').value,reason:document.getElementById('medicalReason').value,diagnosis:document.getElementById('medicalDiagnosis').value,treatment:document.getElementById('medicalTreatment').value,vet:document.getElementById('medicalVet').value,cost:document.getElementById('medicalCost').value});setData('medical',m);closeModal('medicalModal');e.target.reset();loadMedical();updateDashboard();showNotification('Registro médico guardado');}
+    function loadMedical(){const m=getData('medical'),c=document.getElementById('medicalTimeline');if(!m.length){c.innerHTML='<div class="empty-state"><div class="empty-icon">🏥</div><p>Sin registros</p></div>';return;}c.innerHTML=m.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(m=>`<div class="timeline-item"><div class="timeline-date">${formatDate(m.date)} ${m.cost?'| $'+parseFloat(m.cost).toFixed(2):''}</div><div class="timeline-title">${m.reason}</div><div class="timeline-desc">${m.diagnosis?'<strong>Diagnóstico:</strong> '+m.diagnosis+'<br>':''}${m.treatment?'<strong>Tratamiento:</strong> '+m.treatment+'<br>':''}${m.vet?'<em>Dr. '+m.vet+'</em>':''}</div><button class="btn btn-danger" style="margin-top:10px;" onclick="deleteItem('medical','${m.id}',loadMedical)">🗑️</button></div>`).join('');}
 
     // ==================== WEIGHT ====================
-    function addWeight(e) {
-        e.preventDefault();
-        const weights = getData('weights');
-        weights.push({
-            id: generateId(),
-            date: document.getElementById('weightDate').value,
-            value: parseFloat(document.getElementById('weightValue').value),
-            notes: document.getElementById('weightNotes').value
-        });
-        setData('weights', weights);
-        closeModal('weightModal');
-        e.target.reset();
-        loadWeights();
-        updateDashboard();
-        showNotification('Peso registrado');
-    }
-
-    function loadWeights() {
-        const weights = getData('weights').sort((a,b) => new Date(a.date) - new Date(b.date));
-        const table = document.getElementById('weightTable');
-        if (weights.length === 0) {
-            table.innerHTML = '<tr><td colspan="4"><div class="empty-state"><div class="empty-icon">⚖️</div><p>No hay registros de peso</p></div></td></tr>';
-            ['currentWeight','minWeight','maxWeight'].forEach(id => document.getElementById(id).textContent = '--');
-            document.getElementById('weightBars').innerHTML = '';
-            return;
-        }
-        const values = weights.map(w => w.value);
-        document.getElementById('currentWeight').textContent = values[values.length-1];
-        document.getElementById('minWeight').textContent = Math.min(...values);
-        document.getElementById('maxWeight').textContent = Math.max(...values);
-
-        const maxVal = Math.max(...values, 1);
-        document.getElementById('weightBars').innerHTML = weights.slice(-12).map(w => {
-            const height = (w.value / (maxVal * 1.2)) * 100;
-            return `<div class="chart-bar-wrapper">
-                <div class="chart-bar green-bar" style="height:${height}%">
-                    <div class="chart-bar-value">${w.value}</div>
-                </div>
-                <div class="chart-bar-label">${formatDate(w.date).split(' ').slice(0,2).join(' ')}</div>
-            </div>`;
-        }).join('');
-
-        table.innerHTML = weights.sort((a,b) => new Date(b.date) - new Date(a.date)).map(w => `
-            <tr>
-                <td>${formatDate(w.date)}</td>
-                <td><strong>${w.value} kg</strong></td>
-                <td>${w.notes || '--'}</td>
-                <td><button class="btn btn-danger" onclick="deleteItem('weights','${w.id}',loadWeights)">🗑️</button></td>
-            </tr>
-        `).join('');
-    }
+    function addWeight(e){e.preventDefault();const w=getData('weights');w.push({id:generateId(),date:document.getElementById('weightDate').value,value:parseFloat(document.getElementById('weightValue').value),notes:document.getElementById('weightNotes').value});setData('weights',w);closeModal('weightModal');e.target.reset();loadWeights();updateDashboard();showNotification('Peso registrado');}
+    function loadWeights(){const w=getData('weights').sort((a,b)=>new Date(a.date)-new Date(b.date)),t=document.getElementById('weightTable');if(!w.length){t.innerHTML='<tr><td colspan="4"><div class="empty-state"><div class="empty-icon">⚖️</div><p>Sin registros</p></div></td></tr>';['currentWeight','minWeight','maxWeight'].forEach(id=>document.getElementById(id).textContent='--');document.getElementById('weightBars').innerHTML='';return;}const vals=w.map(x=>x.value);document.getElementById('currentWeight').textContent=vals[vals.length-1];document.getElementById('minWeight').textContent=Math.min(...vals);document.getElementById('maxWeight').textContent=Math.max(...vals);const mx=Math.max(...vals,1);document.getElementById('weightBars').innerHTML=w.slice(-12).map(x=>{const h=(x.value/(mx*1.2))*100;return `<div class="chart-bar-wrapper"><div class="chart-bar green-bar" style="height:${h}%"><div class="chart-bar-value">${x.value}</div></div><div class="chart-bar-label">${formatDate(x.date).split(' ').slice(0,2).join(' ')}</div></div>`;}).join('');t.innerHTML=w.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(x=>`<tr><td>${formatDate(x.date)}</td><td><strong>${x.value} kg</strong></td><td>${x.notes||'--'}</td><td><button class="btn btn-danger" onclick="deleteItem('weights','${x.id}',loadWeights)">🗑️</button></td></tr>`).join('');}
 
     // ==================== FOOD ====================
-    function addFood(e) {
-        e.preventDefault();
-        const foods = getData('foods');
-        foods.push({
-            id: generateId(),
-            type: document.getElementById('foodType').value,
-            name: document.getElementById('foodName').value,
-            amount: document.getElementById('foodAmount').value,
-            time: document.getElementById('foodTime').value,
-            freq: document.getElementById('foodFreq').value
-        });
-        setData('foods', foods);
-        closeModal('foodModal');
-        e.target.reset();
-        loadFoods();
-        showNotification('Alimento registrado');
-    }
-
-    function loadFoods() {
-        const foods = getData('foods');
-        const container = document.getElementById('foodList');
-        if (foods.length === 0) {
-            container.innerHTML = '<div class="empty-state"><div class="empty-icon">🍽️</div><p>No hay registros de alimentación</p></div>';
-            return;
-        }
-        container.innerHTML = foods.map(f => `
-            <div class="food-item">
-                <div class="food-info">
-                    <span class="food-emoji">${f.type.split(' ')[0]}</span>
-                    <div>
-                        <div class="food-name">${f.name}</div>
-                        <div class="food-amount">${f.amount || ''} | ${f.freq}</div>
-                    </div>
-                </div>
-                <div style="display:flex;align-items:center;gap:10px;">
-                    <span class="food-time">${f.time || '--'}</span>
-                    <button class="btn btn-danger" onclick="deleteItem('foods','${f.id}',loadFoods)">🗑️</button>
-                </div>
-            </div>
-        `).join('');
-    }
+    function addFood(e){e.preventDefault();const f=getData('foods');f.push({id:generateId(),type:document.getElementById('foodType').value,name:document.getElementById('foodName').value,amount:document.getElementById('foodAmount').value,time:document.getElementById('foodTime').value,freq:document.getElementById('foodFreq').value});setData('foods',f);closeModal('foodModal');e.target.reset();loadFoods();showNotification('Alimento registrado');}
+    function loadFoods(){const f=getData('foods'),c=document.getElementById('foodList');if(!f.length){c.innerHTML='<div class="empty-state"><div class="empty-icon">🍽️</div><p>Sin registros</p></div>';return;}c.innerHTML=f.map(x=>`<div class="food-item"><div class="food-info"><span class="food-emoji">${x.type.split(' ')[0]}</span><div><div class="food-name">${x.name}</div><div class="food-amount">${x.amount||''} | ${x.freq}</div></div></div><div style="display:flex;align-items:center;gap:10px;"><span class="food-time">${x.time||'--'}</span><button class="btn btn-danger" onclick="deleteItem('foods','${x.id}',loadFoods)">🗑️</button></div></div>`).join('');}
 
     // ==================== HYGIENE ====================
-    function addHygiene(e) {
-        e.preventDefault();
-        const hygiene = getData('hygiene');
-        hygiene.push({
-            id: generateId(),
-            type: document.getElementById('hygieneType').value,
-            date: document.getElementById('hygieneDate').value,
-            product: document.getElementById('hygieneProduct').value,
-            notes: document.getElementById('hygieneNotes').value
-        });
-        setData('hygiene', hygiene);
-        closeModal('hygieneModal');
-        e.target.reset();
-        loadHygiene();
-        showNotification('Registro de higiene guardado');
-    }
-
-    function loadHygiene() {
-        const hygiene = getData('hygiene');
-        const table = document.getElementById('hygieneTable');
-        if (hygiene.length === 0) {
-            table.innerHTML = '<tr><td colspan="5"><div class="empty-state"><div class="empty-icon">🧼</div><p>No hay registros de higiene</p></div></td></tr>';
-            return;
-        }
-        table.innerHTML = hygiene.sort((a,b) => new Date(b.date) - new Date(a.date)).map(h => `
-            <tr>
-                <td>${h.type}</td>
-                <td>${formatDate(h.date)}</td>
-                <td>${h.product || '--'}</td>
-                <td>${h.notes || '--'}</td>
-                <td><button class="btn btn-danger" onclick="deleteItem('hygiene','${h.id}',loadHygiene)">🗑️</button></td>
-            </tr>
-        `).join('');
-    }
+    function addHygiene(e){e.preventDefault();const h=getData('hygiene');h.push({id:generateId(),type:document.getElementById('hygieneType').value,date:document.getElementById('hygieneDate').value,product:document.getElementById('hygieneProduct').value,notes:document.getElementById('hygieneNotes').value});setData('hygiene',h);closeModal('hygieneModal');e.target.reset();loadHygiene();showNotification('Higiene registrada');}
+    function loadHygiene(){const h=getData('hygiene'),t=document.getElementById('hygieneTable');if(!h.length){t.innerHTML='<tr><td colspan="5"><div class="empty-state"><div class="empty-icon">🧼</div><p>Sin registros</p></div></td></tr>';return;}t.innerHTML=h.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(x=>`<tr><td>${x.type}</td><td>${formatDate(x.date)}</td><td>${x.product||'--'}</td><td>${x.notes||'--'}</td><td><button class="btn btn-danger" onclick="deleteItem('hygiene','${x.id}',loadHygiene)">🗑️</button></td></tr>`).join('');}
 
     // ==================== EXERCISE ====================
-    function addExercise(e) {
-        e.preventDefault();
-        const exercises = getData('exercises');
-        exercises.push({
-            id: generateId(),
-            type: document.getElementById('exerciseType').value,
-            date: document.getElementById('exerciseDate').value,
-            duration: document.getElementById('exerciseDuration').value,
-            distance: document.getElementById('exerciseDistance').value,
-            notes: document.getElementById('exerciseNotes').value
-        });
-        setData('exercises', exercises);
-        closeModal('exerciseModal');
-        e.target.reset();
-        loadExercises();
-        showNotification('Ejercicio registrado');
-    }
-
-    function loadExercises() {
-        const exercises = getData('exercises');
-        const grid = document.getElementById('exerciseGrid');
-        if (exercises.length === 0) {
-            grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1;"><div class="empty-icon">🏃</div><p>No hay ejercicios registrados</p></div>';
-            return;
-        }
-        grid.innerHTML = exercises.sort((a,b) => new Date(b.date) - new Date(a.date)).map(ex => `
-            <div class="exercise-card">
-                <div class="exercise-icon">${ex.type.split(' ')[0]}</div>
-                <div class="exercise-name">${ex.type.split(' ').slice(1).join(' ')}</div>
-                <div class="exercise-duration">${ex.duration} min ${ex.distance ? '| '+ex.distance+' km' : ''}</div>
-                <div style="font-size:0.8rem;color:#888;margin-top:5px;">${formatDate(ex.date)}</div>
-                ${ex.notes ? '<div style="font-size:0.8rem;color:#666;margin-top:5px;">'+ex.notes+'</div>' : ''}
-                <button class="btn btn-danger btn-small" style="margin-top:10px;" onclick="deleteItem('exercises','${ex.id}',loadExercises)">🗑️</button>
-            </div>
-        `).join('');
-
-        const now = new Date();
-        const weekAgo = new Date(now.getTime() - 7*24*60*60*1000);
-        const weekEx = exercises.filter(ex => new Date(ex.date) >= weekAgo);
-        const walks = weekEx.filter(ex => ex.type.includes('Paseo')).length;
-        const runs = weekEx.filter(ex => ex.type.includes('Carrera')).length;
-        const plays = weekEx.filter(ex => ex.type.includes('Juego')).length;
-
-        document.getElementById('walkProgress').textContent = `${walks}/14`;
-        document.getElementById('walkBar').style.width = Math.min((walks/14)*100, 100) + '%';
-        document.getElementById('runProgress').textContent = `${runs}/7`;
-        document.getElementById('runBar').style.width = Math.min((runs/7)*100, 100) + '%';
-        document.getElementById('playProgress').textContent = `${plays}/7`;
-        document.getElementById('playBar').style.width = Math.min((plays/7)*100, 100) + '%';
-    }
+    function addExercise(e){e.preventDefault();const ex=getData('exercises');ex.push({id:generateId(),type:document.getElementById('exerciseType').value,date:document.getElementById('exerciseDate').value,duration:document.getElementById('exerciseDuration').value,distance:document.getElementById('exerciseDistance').value,notes:document.getElementById('exerciseNotes').value});setData('exercises',ex);closeModal('exerciseModal');e.target.reset();loadExercises();showNotification('Ejercicio registrado');}
+    function loadExercises(){const ex=getData('exercises'),g=document.getElementById('exerciseGrid');if(!ex.length){g.innerHTML='<div class="empty-state" style="grid-column:1/-1;"><div class="empty-icon">🏃</div><p>Sin ejercicios</p></div>';return;}g.innerHTML=ex.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(x=>`<div class="exercise-card"><div class="exercise-icon">${x.type.split(' ')[0]}</div><div class="exercise-name">${x.type.split(' ').slice(1).join(' ')}</div><div class="exercise-duration">${x.duration} min ${x.distance?'| '+x.distance+' km':''}</div><div style="font-size:0.8rem;color:#888;margin-top:5px;">${formatDate(x.date)}</div><button class="btn btn-danger btn-small" style="margin-top:10px;" onclick="deleteItem('exercises','${x.id}',loadExercises)">🗑️</button></div>`).join('');const now=new Date(),wa=new Date(now-7*864e5),we=ex.filter(x=>new Date(x.date)>=wa);const wk=we.filter(x=>x.type.includes('Paseo')).length,rn=we.filter(x=>x.type.includes('Carrera')).length,pl=we.filter(x=>x.type.includes('Juego')).length;document.getElementById('walkProgress').textContent=wk+'/14';document.getElementById('walkBar').style.width=Math.min(wk/14*100,100)+'%';document.getElementById('runProgress').textContent=rn+'/7';document.getElementById('runBar').style.width=Math.min(rn/7*100,100)+'%';document.getElementById('playProgress').textContent=pl+'/7';document.getElementById('playBar').style.width=Math.min(pl/7*100,100)+'%';}
 
     // ==================== REMINDERS ====================
-    function addReminder(e) {
-        e.preventDefault();
-        const reminders = getData('reminders');
-        reminders.push({
-            id: generateId(),
-            category: document.getElementById('reminderCategory').value,
-            desc: document.getElementById('reminderDesc').value,
-            date: document.getElementById('reminderDate').value,
-            priority: document.getElementById('reminderPriority').value,
-            completed: false
-        });
-        setData('reminders', reminders);
-        closeModal('reminderModal');
-        e.target.reset();
-        loadReminders();
-        updateDashboard();
-        showNotification('Recordatorio agregado');
-    }
-
-    function toggleReminder(id) {
-        const reminders = getData('reminders');
-        const idx = reminders.findIndex(r => r.id === id);
-        if (idx !== -1) {
-            reminders[idx].completed = !reminders[idx].completed;
-            setData('reminders', reminders);
-            loadReminders();
-            updateDashboard();
-        }
-    }
-
-    function loadReminders() {
-        const reminders = getData('reminders');
-        const container = document.getElementById('reminderList');
-        if (reminders.length === 0) {
-            container.innerHTML = '<div class="empty-state"><div class="empty-icon">🔔</div><p>No hay recordatorios</p></div>';
-            return;
-        }
-        container.innerHTML = reminders.sort((a,b) => {
-            if (a.completed !== b.completed) return a.completed ? 1 : -1;
-            return new Date(a.date) - new Date(b.date);
-        }).map(r => {
-            const diff = Math.ceil((new Date(r.date) - new Date()) / (1000*60*60*24));
-            let urgency = '';
-            if (!r.completed) {
-                if (diff < 0) urgency = ' (⚠️ Vencido)';
-                else if (diff === 0) urgency = ' (🔴 HOY)';
-                else if (diff <= 3) urgency = ' (⏰ Pronto)';
-            }
-            return `<div class="reminder-item ${r.completed ? 'completed' : ''}">
-                <span class="reminder-icon">${r.category.split(' ')[0]}</span>
-                <div class="reminder-content">
-                    <div class="reminder-title">${r.desc} ${urgency}</div>
-                    <div class="reminder-date">${r.category} | ${formatDate(r.date)} | ${r.priority}</div>
-                </div>
-                <input type="checkbox" class="reminder-check" ${r.completed ? 'checked' : ''} onchange="toggleReminder('${r.id}')">
-                <button class="btn btn-danger" onclick="deleteItem('reminders','${r.id}',loadReminders)">🗑️</button>
-            </div>`;
-        }).join('');
-    }
+    function addReminder(e){e.preventDefault();const r=getData('reminders');r.push({id:generateId(),category:document.getElementById('reminderCategory').value,desc:document.getElementById('reminderDesc').value,date:document.getElementById('reminderDate').value,priority:document.getElementById('reminderPriority').value,completed:false});setData('reminders',r);closeModal('reminderModal');e.target.reset();loadReminders();updateDashboard();showNotification('Recordatorio agregado');}
+    function toggleReminder(id){const r=getData('reminders'),i=r.findIndex(x=>x.id===id);if(i!==-1){r[i].completed=!r[i].completed;setData('reminders',r);loadReminders();updateDashboard();}}
+    function loadReminders(){const r=getData('reminders'),c=document.getElementById('reminderList');if(!r.length){c.innerHTML='<div class="empty-state"><div class="empty-icon">🔔</div><p>Sin recordatorios</p></div>';return;}c.innerHTML=r.sort((a,b)=>{if(a.completed!==b.completed)return a.completed?1:-1;return new Date(a.date)-new Date(b.date);}).map(x=>{const d=Math.ceil((new Date(x.date)-new Date())/864e5);let u='';if(!x.completed){if(d<0)u=' (⚠️ Vencido)';else if(d===0)u=' (🔴 HOY)';else if(d<=3)u=' (⏰ Pronto)';}return `<div class="reminder-item ${x.completed?'completed':''}"><span class="reminder-icon">${x.category.split(' ')[0]}</span><div class="reminder-content"><div class="reminder-title">${x.desc}${u}</div><div class="reminder-date">${x.category} | ${formatDate(x.date)} | ${x.priority}</div></div><input type="checkbox" class="reminder-check" ${x.completed?'checked':''} onchange="toggleReminder('${x.id}')"><button class="btn btn-danger" onclick="deleteItem('reminders','${x.id}',loadReminders)">🗑️</button></div>`;}).join('');}
 
     // ==================== DELETE ====================
-    function deleteItem(key, id, callback) {
-        if (confirm('¿Eliminar este registro?')) {
-            let data = getData(key);
-            data = data.filter(item => item.id !== id);
-            setData(key, data);
-            callback();
-            updateDashboard();
-            showNotification('Registro eliminado');
-        }
-    }
+    function deleteItem(key,id,cb){if(confirm('¿Eliminar?')){let d=getData(key);d=d.filter(x=>x.id!==id);setData(key,d);cb();updateDashboard();showNotification('Eliminado');}}
 
     // ==================== DASHBOARD ====================
-    function updateDashboard() {
-        const vaccines = getData('vaccines');
-        const medical = getData('medical');
-        const weights = getData('weights');
-        const reminders = getData('reminders').filter(r => !r.completed);
-        const growthRecords = getData('growthRecords').sort((a,b) => a.weekNum - b.weekNum);
-
-        document.getElementById('statVaccines').textContent = vaccines.length;
-        document.getElementById('statMedical').textContent = medical.length;
-        document.getElementById('statReminders').textContent = reminders.length;
-
-        if (weights.length > 0) {
-            const sorted = weights.sort((a,b) => new Date(b.date) - new Date(a.date));
-            document.getElementById('statWeight').textContent = sorted[0].value;
-        }
-
-        // Dashboard reminders
-        const dashRem = document.getElementById('dashReminders');
-        if (reminders.length === 0) {
-            dashRem.innerHTML = '<div class="empty-state"><div class="empty-icon">📋</div><p>No hay recordatorios pendientes</p></div>';
-        } else {
-            dashRem.innerHTML = reminders.sort((a,b) => new Date(a.date) - new Date(b.date)).slice(0,5).map(r => `
-                <div class="reminder-item">
-                    <span class="reminder-icon">${r.category.split(' ')[0]}</span>
-                    <div class="reminder-content">
-                        <div class="reminder-title">${r.desc}</div>
-                        <div class="reminder-date">${formatDate(r.date)}</div>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        // Growth in dashboard
-        const last = growthRecords.length > 0 ? growthRecords[growthRecords.length-1] : null;
-        const prev = growthRecords.length > 1 ? growthRecords[growthRecords.length-2] : null;
-        updateDashGrowth(last, prev);
+    function updateDashboard(){
+        const v=getData('vaccines'),m=getData('medical'),w=getData('weights'),r=getData('reminders').filter(x=>!x.completed),g=getData('growthRecords').sort((a,b)=>a.weekNum-b.weekNum);
+        document.getElementById('statVaccines').textContent=v.length;
+        document.getElementById('statMedical').textContent=m.length;
+        document.getElementById('statReminders').textContent=r.length;
+        if(w.length>0) document.getElementById('statWeight').textContent=w.sort((a,b)=>new Date(b.date)-new Date(a.date))[0].value;
+        const dr=document.getElementById('dashReminders');
+        if(!r.length) dr.innerHTML='<div class="empty-state"><div class="empty-icon">📋</div><p>Sin recordatorios pendientes</p></div>';
+        else dr.innerHTML=r.sort((a,b)=>new Date(a.date)-new Date(b.date)).slice(0,5).map(x=>`<div class="reminder-item"><span class="reminder-icon">${x.category.split(' ')[0]}</span><div class="reminder-content"><div class="reminder-title">${x.desc}</div><div class="reminder-date">${formatDate(x.date)}</div></div></div>`).join('');
+        const last=g.length?g[g.length-1]:null,prev=g.length>1?g[g.length-2]:null;
+        updateDashGrowth(last,prev);
     }
+
+    // ==================== SYNC SYSTEM ====================
+    const DATA_KEYS=['profile','growthRecords','vaccines','medical','weights','foods','hygiene','exercises','reminders','activities','avatarImg'];
+
+    function switchSyncTab(tab){
+        const isG=tab==='generar';
+        document.getElementById('panelGenerar').style.display=isG?'block':'none';
+        document.getElementById('panelRestaurar').style.display=isG?'none':'block';
+        const bG=document.getElementById('tabGenerar'),bR=document.getElementById('tabRestaurar');
+        bG.style.background=isG?'var(--accent)':'#f5f5f5';bG.style.color=isG?'white':'#888';
+        bR.style.background=isG?'#f5f5f5':'var(--accent)';bR.style.color=isG?'#888':'white';
+    }
+
+    function generateKey(){
+        const payload={};
+        DATA_KEYS.forEach(k=>{const v=localStorage.getItem(k);if(v!==null)payload[k]=v;});
+        const meta={v:'1.0',ts:Date.now(),exp:Date.now()+30*864e5,dog:(getObject('profile').name||'Dálmata'),d:payload};
+        const key=btoa(unescape(encodeURIComponent(JSON.stringify(meta))));
+        document.getElementById('keyOutput').value=key.match(/.{1,60}/g).join('\n');
+        document.getElementById('keyDate').textContent='📅 '+new Date().toLocaleDateString('es-ES');
+        document.getElementById('keyResult').style.display='block';
+        showNotification('🔑 Clave generada');
+    }
+
+    function copyKey(){
+        const k=document.getElementById('keyOutput').value;
+        if(!k.trim()){showNotification('Genera una clave primero','error');return;}
+        if(navigator.clipboard) navigator.clipboard.writeText(k).then(()=>showNotification('📋 Clave copiada'));
+        else{document.getElementById('keyOutput').select();document.execCommand('copy');showNotification('📋 Copiada');}
+    }
+
+    function shareKey(){
+        const k=document.getElementById('keyOutput').value,dog=getObject('profile').name||'Dálmata';
+        if(!k.trim()){showNotification('Genera una clave primero','error');return;}
+        if(navigator.share) navigator.share({title:'🐾 DalmataTracker - '+dog,text:'Clave de sincronización:\n\n'+k}).catch(()=>copyKey());
+        else copyKey();
+    }
+
+    function restoreKey(){
+        const raw=document.getElementById('keyInput').value.trim();
+        if(!raw){showNotification('Pega una clave primero','error');return;}
+        try{
+            const clean=raw.replace(/\s+/g,'');
+            const meta=JSON.parse(decodeURIComponent(escape(atob(clean))));
+            if(!meta.v||!meta.d) throw new Error('Formato inválido');
+            if(meta.exp&&Date.now()>meta.exp){
+                if(!confirm('⚠️ Clave expirada el '+new Date(meta.exp).toLocaleDateString('es-ES')+'.\n¿Restaurar igualmente?')) return;
+            }
+            const dog=meta.dog||'desconocida',fecha=new Date(meta.ts).toLocaleDateString('es-ES');
+            if(!confirm(`🐾 Datos de: ${dog}\n📅 Fecha: ${fecha}\n\n¿Restaurar? Se reemplazarán los datos actuales.`)) return;
+            Object.keys(meta.d).forEach(k=>{if(meta.d[k]!==null) localStorage.setItem(k,meta.d[k]);});
+            loadAll();closeModal('syncModal');
+            document.getElementById('keyInput').value='';
+            showNotification('✅ ¡Datos restaurados!');
+        }catch(err){console.error(err);showNotification('❌ Clave inválida','error');}
+    }
+
+    function loadAll(){loadProfile();loadGrowth();loadVaccines();loadMedical();loadWeights();loadFoods();loadHygiene();loadExercises();loadReminders();updateDashboard();}
 
     // ==================== INIT ====================
-    function init() {
-        updateDate();
-        loadProfile();
-        loadGrowth();
-        loadVaccines();
-        loadMedical();
-        loadWeights();
-        loadFoods();
-        loadHygiene();
-        loadExercises();
-        loadReminders();
-        updateDashboard();
-
-        // Default dates
-        const today = new Date().toISOString().split('T')[0];
-        document.querySelectorAll('input[type="date"]').forEach(input => {
-            if (!input.value) input.value = today;
-        });
-
-        // Auto-suggest week number
-        const records = getData('growthRecords');
-        if (records.length > 0) {
-            const maxWeek = Math.max(...records.map(r => r.weekNum));
-            document.getElementById('growthWeekNum').value = maxWeek + 1;
-        } else {
-            document.getElementById('growthWeekNum').value = 1;
-        }
+    function init(){
+        updateDate();loadAll();
+        const today=new Date().toISOString().split('T')[0];
+        document.querySelectorAll('input[type="date"]').forEach(i=>{if(!i.value)i.value=today;});
+        const gr=getData('growthRecords');
+        document.getElementById('growthWeekNum').value=gr.length?Math.max(...gr.map(r=>r.weekNum))+1:1;
     }
-
     init();
     </script>
 </body>
